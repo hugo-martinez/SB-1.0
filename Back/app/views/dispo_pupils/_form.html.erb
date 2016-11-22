@@ -1,0 +1,32 @@
+<%= form_for(dispo_pupil) do |f| %>
+  <% if dispo_pupil.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dispo_pupil.errors.count, "error") %> prohibited this dispo_pupil from being saved:</h2>
+
+      <ul>
+      <% dispo_pupil.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :pupil_id %>
+    <%= f.text_field :pupil_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :integer %>
+    <%= f.text_field :integer %>
+  </div>
+
+  <div class="field">
+    <%= f.label :date %>
+    <%= f.date_select :date %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

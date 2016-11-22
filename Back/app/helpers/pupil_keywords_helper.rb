@@ -1,0 +1,2 @@
+module PupilKeywordsHelper
+end

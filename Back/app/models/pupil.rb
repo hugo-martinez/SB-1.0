@@ -1,0 +1,2 @@
+class Pupil < ApplicationRecord
+end

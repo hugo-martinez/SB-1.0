@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pupil Keywords</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pupil</th>
+      <th>Integer</th>
+      <th>Keyword</th>
+      <th>String</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pupil_keywords.each do |pupil_keyword| %>
+      <tr>
+        <td><%= pupil_keyword.pupil_id %></td>
+        <td><%= pupil_keyword.integer %></td>
+        <td><%= pupil_keyword.keyword %></td>
+        <td><%= pupil_keyword.string %></td>
+        <td><%= link_to 'Show', pupil_keyword %></td>
+        <td><%= link_to 'Edit', edit_pupil_keyword_path(pupil_keyword) %></td>
+        <td><%= link_to 'Destroy', pupil_keyword, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pupil Keyword', new_pupil_keyword_path %>

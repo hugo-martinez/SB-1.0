@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Teach:</strong>
+  <%= @dispo_teach.teach_id %>
+</p>
+
+<p>
+  <strong>Integer:</strong>
+  <%= @dispo_teach.integer %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @dispo_teach.date %>
+</p>
+
+<%= link_to 'Edit', edit_dispo_teach_path(@dispo_teach) %> |
+<%= link_to 'Back', dispo_teaches_path %>

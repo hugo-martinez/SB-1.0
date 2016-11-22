@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Teach Keywords</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Teach</th>
+      <th>Integer</th>
+      <th>Keyword</th>
+      <th>String</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @teach_keywords.each do |teach_keyword| %>
+      <tr>
+        <td><%= teach_keyword.teach_id %></td>
+        <td><%= teach_keyword.integer %></td>
+        <td><%= teach_keyword.keyword %></td>
+        <td><%= teach_keyword.string %></td>
+        <td><%= link_to 'Show', teach_keyword %></td>
+        <td><%= link_to 'Edit', edit_teach_keyword_path(teach_keyword) %></td>
+        <td><%= link_to 'Destroy', teach_keyword, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Teach Keyword', new_teach_keyword_path %>

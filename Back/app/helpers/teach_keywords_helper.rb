@@ -1,0 +1,2 @@
+module TeachKeywordsHelper
+end

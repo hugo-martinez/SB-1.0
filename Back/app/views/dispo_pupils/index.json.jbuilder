@@ -1,0 +1,1 @@
+json.array! @dispo_pupils, partial: 'dispo_pupils/dispo_pupil', as: :dispo_pupil

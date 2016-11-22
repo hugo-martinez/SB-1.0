@@ -1,0 +1,1 @@
+json.array! @pupil_keywords, partial: 'pupil_keywords/pupil_keyword', as: :pupil_keyword

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pupil:</strong>
+  <%= @dispo_pupil.pupil_id %>
+</p>
+
+<p>
+  <strong>Integer:</strong>
+  <%= @dispo_pupil.integer %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @dispo_pupil.date %>
+</p>
+
+<%= link_to 'Edit', edit_dispo_pupil_path(@dispo_pupil) %> |
+<%= link_to 'Back', dispo_pupils_path %>

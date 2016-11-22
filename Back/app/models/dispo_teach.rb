@@ -1,0 +1,2 @@
+class DispoTeach < ApplicationRecord
+end

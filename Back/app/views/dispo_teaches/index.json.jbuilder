@@ -1,0 +1,1 @@
+json.array! @dispo_teaches, partial: 'dispo_teaches/dispo_teach', as: :dispo_teach

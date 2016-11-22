@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pupil_id: MyString
+  integer: MyString
+  date: 2016-11-22
+
+two:
+  pupil_id: MyString
+  integer: MyString
+  date: 2016-11-22

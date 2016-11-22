@@ -1,0 +1,2 @@
+class PupilKeyword < ApplicationRecord
+end

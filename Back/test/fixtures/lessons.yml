@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  teach_id: MyString
+  integer: MyString
+  pupil_id: MyString
+  integer: MyString
+  date: 2016-11-22
+  cost: MyString
+  integer: MyString
+  status: MyString
+  integer: MyString
+
+two:
+  teach_id: MyString
+  integer: MyString
+  pupil_id: MyString
+  integer: MyString
+  date: 2016-11-22
+  cost: MyString
+  integer: MyString
+  status: MyString
+  integer: MyString
