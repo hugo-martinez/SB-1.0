@@ -1,2 +1,0 @@
-class DispoTeach < ApplicationRecord
-end

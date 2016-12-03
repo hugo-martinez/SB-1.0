@@ -1,2 +1,0 @@
-class PupilKeyword < ApplicationRecord
-end

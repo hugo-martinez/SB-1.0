@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   resources :lessons
-  resources :dispo_pupils
-  resources :dispo_teaches
+  resources :dispo_dems
+  resources :dispo_courses
+  resources :keyword_courses
+  resources :keyword_dems
   resources :themes
-  resources :pupil_keywords
-  resources :teach_keywords
-  resources :pupils
-  resources :teachers
+  resources :demands
+  resources :courses
   resources :users
   get 'home/index'
 

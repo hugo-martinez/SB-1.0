@@ -1,1 +1,0 @@
-json.array! @teach_keywords, partial: 'teach_keywords/teach_keyword', as: :teach_keyword

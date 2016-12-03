@@ -1,0 +1,2 @@
+class DispoCourse < ApplicationRecord
+end

@@ -1,0 +1,1 @@
+json.partial! "keyword_dems/keyword_dem", keyword_dem: @keyword_dem

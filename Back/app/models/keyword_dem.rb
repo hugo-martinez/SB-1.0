@@ -1,0 +1,2 @@
+class KeywordDem < ApplicationRecord
+end

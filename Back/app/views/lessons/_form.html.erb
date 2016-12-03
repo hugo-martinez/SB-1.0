@@ -1,62 +1,62 @@
-<%= form_for(lesson) do |f| %>
-  <% if lesson.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(lesson.errors.count, "error") %> prohibited this lesson from being saved:</h2>
+<%= form_for @lesson, :html => { :class => "form-horizontal lesson" } do |f| %>
 
-      <ul>
-      <% lesson.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+  <% if @lesson.errors.any? %>
+    <div id="error_expl" class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title"><%= pluralize(@lesson.errors.count, "error") %> prohibited this lesson from being saved:</h3>
+      </div>
+      <div class="panel-body">
+        <ul>
+        <% @lesson.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :teach_id %>
-    <%= f.text_field :teach_id %>
+  <div class="form-group">
+    <%= f.label :course_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :course_id, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:course_id) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :dem_id, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :dem_id, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:dem_id) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :date, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :date, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:date) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :cost, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :cost, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:cost) %>
+  </div>
+  <div class="form-group">
+    <%= f.label :status, :class => 'control-label col-lg-2' %>
+    <div class="col-lg-10">
+      <%= f.text_field :status, :class => 'form-control' %>
+    </div>
+    <%=f.error_span(:status) %>
   </div>
 
-  <div class="field">
-    <%= f.label :integer %>
-    <%= f.text_field :integer %>
+  <div class="form-group">
+    <div class="col-lg-offset-2 col-lg-10">
+      <%= f.submit nil, :class => 'btn btn-primary' %>
+      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                lessons_path, :class => 'btn btn-default' %>
+    </div>
   </div>
 
-  <div class="field">
-    <%= f.label :pupil_id %>
-    <%= f.text_field :pupil_id %>
-  </div>
-
-  <div class="field">
-    <%= f.label :integer %>
-    <%= f.text_field :integer %>
-  </div>
-
-  <div class="field">
-    <%= f.label :date %>
-    <%= f.date_select :date %>
-  </div>
-
-  <div class="field">
-    <%= f.label :cost %>
-    <%= f.text_field :cost %>
-  </div>
-
-  <div class="field">
-    <%= f.label :integer %>
-    <%= f.text_field :integer %>
-  </div>
-
-  <div class="field">
-    <%= f.label :status %>
-    <%= f.text_field :status %>
-  </div>
-
-  <div class="field">
-    <%= f.label :integer %>
-    <%= f.text_field :integer %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>

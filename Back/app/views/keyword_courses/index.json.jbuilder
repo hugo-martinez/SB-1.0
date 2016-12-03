@@ -1,0 +1,1 @@
+json.array! @keyword_courses, partial: 'keyword_courses/keyword_course', as: :keyword_course

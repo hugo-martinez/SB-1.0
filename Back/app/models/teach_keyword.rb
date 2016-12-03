@@ -1,2 +1,0 @@
-class TeachKeyword < ApplicationRecord
-end

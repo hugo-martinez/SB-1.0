@@ -1,1 +1,0 @@
-json.partial! "teach_keywords/teach_keyword", teach_keyword: @teach_keyword

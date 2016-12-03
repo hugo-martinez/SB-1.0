@@ -1,0 +1,2 @@
+class DispoDem < ApplicationRecord
+end

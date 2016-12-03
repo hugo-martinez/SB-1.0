@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Dem:</strong>
+  <%= @keyword_dem.dem_id %>
+</p>
+
+<p>
+  <strong>Keyword:</strong>
+  <%= @keyword_dem.keyword %>
+</p>
+
+<%= link_to 'Edit', edit_keyword_dem_path(@keyword_dem) %> |
+<%= link_to 'Back', keyword_dems_path %>

@@ -1,0 +1,2 @@
+module KeywordCoursesHelper
+end

@@ -10,77 +10,67 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161122151824) do
+ActiveRecord::Schema.define(version: 20161203140422) do
 
-  create_table "dispo_pupils", force: :cascade do |t|
-    t.string   "pupil_id"
-    t.string   "integer"
-    t.date     "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "dispo_teaches", force: :cascade do |t|
-    t.string   "teach_id"
-    t.string   "integer"
-    t.date     "date"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "lessons", force: :cascade do |t|
-    t.string   "teach_id"
-    t.string   "integer"
-    t.string   "pupil_id"
-    t.date     "date"
-    t.string   "cost"
-    t.string   "status"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "pupil_keywords", force: :cascade do |t|
-    t.string   "pupil_id"
-    t.string   "integer"
-    t.string   "keyword"
-    t.string   "string"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "pupils", force: :cascade do |t|
-    t.string   "user_id"
-    t.string   "integer"
-    t.string   "theme_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "teach_keywords", force: :cascade do |t|
-    t.string   "teach_id"
-    t.string   "integer"
-    t.string   "keyword"
-    t.string   "string"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "teachers", force: :cascade do |t|
-    t.string   "user_id"
-    t.string   "integer"
-    t.string   "theme_id"
+  create_table "courses", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "theme_id"
     t.string   "title"
-    t.string   "string"
     t.string   "description"
-    t.string   "cost"
+    t.integer  "cost"
     t.string   "photo"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
 
+  create_table "demands", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "theme_id"
+    t.string   "comment"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "dispo_courses", force: :cascade do |t|
+    t.integer  "course_id"
+    t.date     "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "dispo_dems", force: :cascade do |t|
+    t.integer  "dem_id"
+    t.date     "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "keyword_courses", force: :cascade do |t|
+    t.integer  "course_id"
+    t.string   "keyword"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "keyword_dems", force: :cascade do |t|
+    t.integer  "dem_id"
+    t.string   "keyword"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "lessons", force: :cascade do |t|
+    t.integer  "course_id"
+    t.integer  "dem_id"
+    t.date     "date"
+    t.integer  "cost"
+    t.integer  "status"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "themes", force: :cascade do |t|
     t.string   "name"
-    t.string   "string"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -88,10 +78,8 @@ ActiveRecord::Schema.define(version: 20161122151824) do
   create_table "users", force: :cascade do |t|
     t.string   "user_name"
     t.string   "password"
-    t.string   "nb_skilly"
-    t.string   "integer"
+    t.integer  "nb_skilly"
     t.string   "first_name"
-    t.string   "string"
     t.string   "last_name"
     t.string   "email"
     t.string   "location"

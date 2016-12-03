@@ -1,2 +1,0 @@
-json.extract! teacher, :id, :user_id, :integer, :theme_id, :integer, :title, :string, :description, :string, :cost, :integer, :photo, :string, :created_at, :updated_at
-json.url teacher_url(teacher, format: :json)

@@ -1,1 +1,0 @@
-json.partial! "dispo_teaches/dispo_teach", dispo_teach: @dispo_teach
