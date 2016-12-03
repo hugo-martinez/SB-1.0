@@ -61,6 +61,14 @@ class UsersController < ApplicationController
     end
   end
 
+  def search
+    if params[:user_name]
+      then
+      @user = User.where("lower(user_name) = ?", params[:user_name].downcase).first
+    end
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
