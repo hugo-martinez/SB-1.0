@@ -2,8 +2,8 @@
 
 one:
   dem_id: 1
-  keyword: MyString
+  keyword_id: 1
 
 two:
   dem_id: 1
-  keyword: MyString
+  keyword_id: 1

@@ -15,7 +15,7 @@
     <% @keyword_dems.each do |keyword_dem| %>
       <tr>
         <td><%= keyword_dem.dem_id %></td>
-        <td><%= keyword_dem.keyword %></td>
+        <td><%= keyword_dem.keyword_id %></td>
         <td><%= link_to 'Show', keyword_dem %></td>
         <td><%= link_to 'Edit', edit_keyword_dem_path(keyword_dem) %></td>
         <td><%= link_to 'Destroy', keyword_dem, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161203140422) do
+ActiveRecord::Schema.define(version: 20161205140357) do
 
   create_table "courses", force: :cascade do |t|
     t.integer  "user_id"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20161203140422) do
     t.string   "title"
     t.string   "description"
     t.integer  "cost"
+    t.string   "location"
     t.string   "photo"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
@@ -47,14 +48,20 @@ ActiveRecord::Schema.define(version: 20161203140422) do
 
   create_table "keyword_courses", force: :cascade do |t|
     t.integer  "course_id"
-    t.string   "keyword"
+    t.integer  "keyword_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "keyword_dems", force: :cascade do |t|
     t.integer  "dem_id"
-    t.string   "keyword"
+    t.integer  "keyword_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "keywords", force: :cascade do |t|
+    t.string   "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -83,7 +90,7 @@ ActiveRecord::Schema.define(version: 20161203140422) do
     t.string   "last_name"
     t.string   "email"
     t.string   "location"
-    t.string   "age"
+    t.integer  "age"
     t.string   "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

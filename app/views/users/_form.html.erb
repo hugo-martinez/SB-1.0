@@ -1,90 +1,62 @@
-<%= form_for @user, :html => { :class => "form-horizontal user" } do |f| %>
+<%= form_for(user) do |f| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-  <% if @user.errors.any? %>
-    <div id="error_expl" class="panel panel-danger">
-      <div class="panel-heading">
-        <h3 class="panel-title"><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h3>
-      </div>
-      <div class="panel-body">
-        <ul>
-        <% @user.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-        </ul>
-      </div>
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= f.label :user_name, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :user_name, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:user_name) %>
-  </div>
-  <div class="form-group">
-    <%= f.label :password, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :password, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:password) %>
-  </div>
-  <div class="form-group">
-    <%= f.label :nb_skilly, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :nb_skilly, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:nb_skilly) %>
-  </div>
-  <div class="form-group">
-    <%= f.label :first_name, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :first_name, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:first_name) %>
-  </div>
-  <div class="form-group">
-    <%= f.label :last_name, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :last_name, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:last_name) %>
-  </div>
-  <div class="form-group">
-    <%= f.label :email, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :email, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:email) %>
-  </div>
-  <div class="form-group">
-    <%= f.label :location, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :location, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:location) %>
-  </div>
-  <div class="form-group">
-    <%= f.label :age, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :age, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:age) %>
-  </div>
-  <div class="form-group">
-    <%= f.label :photo, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :photo, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:photo) %>
+  <div class="field">
+    <%= f.label :user_name %>
+    <%= f.text_field :user_name %>
   </div>
 
-  <div class="form-group">
-    <div class="col-lg-offset-2 col-lg-10">
-      <%= f.submit nil, :class => 'btn btn-primary' %>
-      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                users_path, :class => 'btn btn-default' %>
-    </div>
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.text_field :password %>
   </div>
 
+  <div class="field">
+    <%= f.label :nb_skilly %>
+    <%= f.number_field :nb_skilly %>
+  </div>
+
+  <div class="field">
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= f.label :age %>
+    <%= f.number_field :age %>
+  </div>
+
+  <div class="field">
+    <%= f.label :photo %>
+    <%= f.text_field :photo %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>

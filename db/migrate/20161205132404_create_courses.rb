@@ -6,6 +6,7 @@ class CreateCourses < ActiveRecord::Migration[5.0]
       t.string :title
       t.string :description
       t.integer :cost
+      t.string :location
       t.string :photo
 
       t.timestamps

@@ -69,6 +69,6 @@ class KeywordDemsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def keyword_dem_params
-      params.require(:keyword_dem).permit(:dem_id, :keyword)
+      params.require(:keyword_dem).permit(:dem_id, :keyword_id)
     end
 end

@@ -69,6 +69,6 @@ class KeywordCoursesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def keyword_course_params
-      params.require(:keyword_course).permit(:course_id, :keyword)
+      params.require(:keyword_course).permit(:course_id, :keyword_id)
     end
 end

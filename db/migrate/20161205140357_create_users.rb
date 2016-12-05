@@ -8,7 +8,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.string :last_name
       t.string :email
       t.string :location
-      t.string :age
+      t.integer :age
       t.string :photo
 
       t.timestamps

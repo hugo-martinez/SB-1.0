@@ -17,7 +17,7 @@ class KeywordDemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create keyword_dem" do
     assert_difference('KeywordDem.count') do
-      post keyword_dems_url, params: { keyword_dem: { dem_id: @keyword_dem.dem_id, keyword: @keyword_dem.keyword } }
+      post keyword_dems_url, params: { keyword_dem: { dem_id: @keyword_dem.dem_id, keyword_id: @keyword_dem.keyword_id } }
     end
 
     assert_redirected_to keyword_dem_url(KeywordDem.last)
@@ -34,7 +34,7 @@ class KeywordDemsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update keyword_dem" do
-    patch keyword_dem_url(@keyword_dem), params: { keyword_dem: { dem_id: @keyword_dem.dem_id, keyword: @keyword_dem.keyword } }
+    patch keyword_dem_url(@keyword_dem), params: { keyword_dem: { dem_id: @keyword_dem.dem_id, keyword_id: @keyword_dem.keyword_id } }
     assert_redirected_to keyword_dem_url(@keyword_dem)
   end
 

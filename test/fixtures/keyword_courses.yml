@@ -2,8 +2,8 @@
 
 one:
   course_id: 1
-  keyword: MyString
+  keyword_id: 1
 
 two:
   course_id: 1
-  keyword: MyString
+  keyword_id: 1

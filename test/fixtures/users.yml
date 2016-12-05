@@ -8,7 +8,7 @@ one:
   last_name: MyString
   email: MyString
   location: MyString
-  age: MyString
+  age: 1
   photo: MyString
 
 two:
@@ -19,5 +19,5 @@ two:
   last_name: MyString
   email: MyString
   location: MyString
-  age: MyString
+  age: 1
   photo: MyString

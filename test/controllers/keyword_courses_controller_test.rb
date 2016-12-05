@@ -17,7 +17,7 @@ class KeywordCoursesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create keyword_course" do
     assert_difference('KeywordCourse.count') do
-      post keyword_courses_url, params: { keyword_course: { course_id: @keyword_course.course_id, keyword: @keyword_course.keyword } }
+      post keyword_courses_url, params: { keyword_course: { course_id: @keyword_course.course_id, keyword_id: @keyword_course.keyword_id } }
     end
 
     assert_redirected_to keyword_course_url(KeywordCourse.last)
@@ -34,7 +34,7 @@ class KeywordCoursesControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update keyword_course" do
-    patch keyword_course_url(@keyword_course), params: { keyword_course: { course_id: @keyword_course.course_id, keyword: @keyword_course.keyword } }
+    patch keyword_course_url(@keyword_course), params: { keyword_course: { course_id: @keyword_course.course_id, keyword_id: @keyword_course.keyword_id } }
     assert_redirected_to keyword_course_url(@keyword_course)
   end
 
