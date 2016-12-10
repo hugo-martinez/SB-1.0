@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.6'
+
 gem 'sqlite3', group: :development
 
 group :production do
