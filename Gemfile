@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-group: :development
+gem 'pg' , group: :development
 
 group :production do
   gem 'pg'
