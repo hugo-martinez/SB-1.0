@@ -61,6 +61,13 @@ class CoursesController < ApplicationController
     end
   end
 
+  def search
+    if params[:user_id]
+      then
+      @course = Course.where(user_id: params[:user_id]).first
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_course

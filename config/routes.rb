@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'users/search.json' => 'users#search'
+  get 'courses/search.json' => 'courses#search'
   resources :lessons
   resources :dispo_dems
   resources :dispo_courses
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
   resources :users
   get 'home/index'
   get 'users/search/:user_name' => 'users#search'
+  get 'courses/search/:user_id' => 'courses#search'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
