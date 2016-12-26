@@ -40,7 +40,57 @@ Course.create(
 	description: 'Cours sur les fondamentaux de la Blockchain, cette nouvelle technologie qui vient disrupter l univers des banques et des assurances. Cours de vulgarisation, pour tous les niveaux.',
 	cost: 110,
 	location: 'Toulouse',
-	photo: 'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fd262ilb51hltx0.cloudfront.net%2Fmax%2F800%2F1*NEWfXAoCASu-ZM9gLkMEJw.jpeg&imgrefurl=https%3A%2F%2Fmedium.com%2Fcuepoint%2Fbc-a-fair-trade-music-format-virtual-reality-the-blockchain-76fc47699733&h=800&w=800&tbnid=inMG2vyOHpBvtM%3A&vet=1&docid=0Qqp5Hgo6vzrOM&ei=rG9FWNHUF8S1a7r6uegO&tbm=isch&client=safari&iact=rc&uact=3&dur=1767&page=0&start=0&ndsp=20&ved=0ahUKEwjR2oCamN3QAhXE2hoKHTp9Du0QMwgfKAIwAg&bih=800&biw=1280'
+	photo: 'img/courses/blockchain.jpeg'
+)
+
+Course.create(
+	user_id: 1,
+	theme_id: 1,
+	title: 'Sculpture pour débutants',
+	description: "Session d'apprentissage de la sculpture pour les personnes n'ayant pas d'expérience.",
+	cost: 60,
+	location: 'Egypte',
+	photo: 'img/courses/sculpture.jpg'
+)
+
+Course.create(
+	user_id: 1,
+	theme_id: 1,
+	title: 'Sculpture avancée',
+	description: "Sculpture pour ceux qui ont déjà de l'expérience dans le domaine.",
+	cost: 90,
+	location: 'Egypte',
+	photo: 'img/courses/sculpture2.jpg'
+)
+
+Course.create(
+	user_id: 1,
+	theme_id: 1,
+	title: 'Bricolage',
+	description: "Cours de bricolage pour pouvoir prendre soin de votre maison/appartement.",
+	cost: 70,
+	location: 'Nice',
+	photo: 'img/courses/tools.jpg'
+)
+
+Course.create(
+	user_id: 1,
+	theme_id: 1,
+	title: 'Kamasutra',
+	description: "Cours de kamasutra pour faire crier votre petit amie ou simplement prendre un peu de bon temps.",
+	cost: 250,
+	location: 'Bois de Boulogne',
+	photo: 'img/courses/woods.jpg'
+)
+
+Course.create(
+	user_id: 1,
+	theme_id: 1,
+	title: 'Échecs',
+	description: "Cours d'échecs pour tous les niveaux.",
+	cost: 90,
+	location: 'Paris',
+	photo: 'img/courses/chess.jpg'
 )
 
 Demand.create(
@@ -94,4 +144,3 @@ KeywordDem.create(
 	dem_id: 1,
 	keyword_id: 4
 )
-
