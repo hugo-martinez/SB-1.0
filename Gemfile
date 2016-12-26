@@ -34,6 +34,14 @@ gem 'jbuilder', '~> 2.5'
 
 gem "twitter-bootstrap-rails"
 
+# gem for CORS usage
+
+gem 'rack-cors', :require => 'rack/cors'
+
+# CORS tuto - helps serializing
+
+gem 'grape-active_model_serializers'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -50,6 +58,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
