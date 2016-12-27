@@ -69,14 +69,14 @@
         ctrl.toggleAux(0, 0);
       }
     };
-    
+
     ctrl.drawButton(ctrl.currentWeight);
   });
-  
+
   angular.module('skilly').directive('choiceButton', [function() {
     return {
       restrict: 'E',
-      templateUrl: "/ang/directives/templates/choiceButton.html",
+      templateUrl: "ang/directives/templates/choiceButton.html",
       controller: "ChoiceButtonController",
       controllerAs: "choiceButtonCtrl",
     };
