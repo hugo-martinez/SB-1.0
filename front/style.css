@@ -1,0 +1,288 @@
+.container-fluid {
+    padding: 0;
+}
+
+html body header {
+  padding: 15px 10px;
+  color: white;
+  background-color: #9A12B3;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+}
+
+html body header div {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+html body header #logo {
+  width: 30%;
+  font-family: "Reem Kufi", sans-serif;
+}
+
+html header #logo h1 {
+  margin: 0;
+}
+
+html body header #middle {
+  width: 40%;
+  text-align: center;
+}
+
+html header #middle p {
+  margin: 0;
+  display: inline-block;
+}
+
+html header #canvas {
+  padding-bottom: 2px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+html header #logo h1 {
+  color: white;
+}
+
+html header #logo h1
+html header #logo h1:link,
+html header #logo h1:focus,
+html header #logo h1:visited,
+html header #logo h1:hover,
+html header #logo h1:active {
+  text-decoration: none;
+  color: white;
+}
+html header #logo a
+html header #logo a:link,
+html header #logo a:focus,
+html header #logo a:visited,
+html header #logo a:hover,
+html header #logo a:active {
+  text-decoration: none;
+  color: white;
+}
+
+html body header #account {
+  text-align: right;
+  width: 29%;
+}
+
+body header #header-links a,
+body header #account a {
+  color: white;
+  cursor: pointer;
+  margin: 0 5px;
+  border: 2px solid rgba(0, 0, 0, 0);
+  padding: 2px 3px;
+  transition: border 1s;
+  -webkit-transition: border 1s;
+}
+
+body header #header-links a,
+body header #header-links a:link,
+body header #header-links a:visited,
+body header #header-links a:hover,
+body header #header-links a:active {
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+body header #account a,
+body header #account a:link,
+body header #account a:visited,
+body header #account a:hover,
+body header #account a:active {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+body header #header-links a:hover,
+body header #account-links a:hover {
+  text-shadow: 0 0 5px black;
+  border-color: white;
+}
+
+header #side-panel {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  margin-right: 0;
+}
+
+header #side-panel .element {
+  display: block;
+  background-color: #9A12B3;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 6px;
+  text-align:center;
+  margin-right: 0;
+}
+
+header #side-panel .element img {
+  max-width: 80%;
+  display: inline-block;
+  margin-right: 0;
+}
+
+body #recherche {
+  background-image: url(img/library2.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  z-index: 5;
+  padding-top: 300px;
+  padding-bottom: 300px;
+  text-align: center;
+}
+
+body #apprendre-ou-transmettre {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3em;
+}
+
+body #apprendre-ou-transmettre span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+body #apprendre-ou-transmettre #canvas {}
+
+body #form-recherche {
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 1.2em;
+}
+
+#form-recherche input {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: black;
+  padding: 5px 8px;
+}
+
+#form-recherche input:focus {
+  outline-style: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: black;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: black;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: black;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black;
+}
+
+
+/* Course feed */
+
+body #courses-feed {}
+
+body #courses-feed .course {
+  padding: 15px 0;
+  text-align: left;
+}
+
+body #courses-feed .course .course-details {
+  vertical-align: top;
+}
+
+
+/* Course map */
+
+#courses-map-row {
+  text-align: center;
+  padding: 20px 0 0 15px;
+}
+
+#courses-map-row iframe {
+  display: inline-block;
+}
+
+#courses-map {
+  height: 500px;
+  width: 100%;
+}
+
+
+/* Footer */
+
+body div#footer {
+  text-align: center;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+div#footer div {}
+
+
+/* content */
+
+body .content {
+  padding-top: 150px;
+}
+
+/* freeline */
+
+body .freeline {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #9A12B3;
+}
+
+body .freeline .tail {
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+/* popin container */
+
+body #popin-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+/* link-to-add */
+
+#link-to-add {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* myForm */
+
+.myForm {
+  padding-top: 30px;
+}
