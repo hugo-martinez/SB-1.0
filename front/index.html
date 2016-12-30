@@ -11,10 +11,15 @@
 <body ng-controller="MainController as mainCtrl">
   <div id='popin-container'></div>
   <div class="container-fluid" ng-controller="CoursesController as coursesCtrl">
-    <header anon-header ng-hide="isAuthentificated()" class="row"></header>
-    <header logged-header ng-show="isAuthentificated()" class="row"></header> 
+    <header anon-header ng-hide="isAuthentificated()"
+      class="row"
+      ng-controller="HeaderController as headerCtrl">
+    </header>
+    <header logged-header ng-show="isAuthentificated()"
+      class="row" ng-controller="HeaderController as headerCtrl">
+    </header>
     <ng-view></ng-view>
-    
+
     <div class="row" id="footer" skilly-footer></div>
 
   </div>
@@ -46,6 +51,7 @@
 <script src="ang/controllers/coursesMap.js"></script>
 <script src="ang/controllers/mainController.js"></script>
 <script src="ang/controllers/authController.js"></script>
+<script src="ang/controllers/header.js"></script>
 
 <!-- Directives -->
 <script src="ang/directives/choiceButton.js"></script>

@@ -2,80 +2,135 @@
     padding: 0;
 }
 
-html body header {
-  padding: 15px 10px;
-  color: white;
-  background-color: #9A12B3;
-  font-family: 'Roboto', sans-serif;
+body header {
+  padding: 10px 5px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
   font-size: 1.4em;
+
+  border-style: none none solid none;
+  border-width: 2px;
+  border-color: rgba(51, 153, 153, 0.7);
 }
 
-html body header div {
-  display: inline-block;
-  margin: 0;
-  vertical-align: middle;
+html body learn-color {
+  color: rgba(51, 153, 153, 1);
 }
 
-html body header #logo {
-  width: 30%;
-  font-family: "Reem Kufi", sans-serif;
+html body teach-color {
+  color: rgba(255, 102, 102, 1);
 }
 
-html header #logo h1 {
-  margin: 0;
+body header #logo {
+  height: 60px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
 }
 
-html body header #middle {
-  width: 40%;
+body header #middle {
+  height: 60px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
   text-align: center;
 }
 
-html header #middle p {
-  margin: 0;
+header #middle p {
   display: inline-block;
 }
 
-html header #canvas {
-  padding-bottom: 2px;
-  vertical-align: middle;
+header #middle p:first-child {
+  color: rgb(51, 153, 153);
+}
+
+header #middle p:last-child {
+  color: rgb(255, 102, 102);
+}
+
+header #middle .switch {
+  position: relative;
   display: inline-block;
+  width: 45px;
+  height: 25.5px;
 }
 
-html header #logo h1 {
-  color: white;
+header #middle .switch input {display:none;}
+
+header #middle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(51, 153, 153);
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-html header #logo h1
-html header #logo h1:link,
-html header #logo h1:focus,
-html header #logo h1:visited,
-html header #logo h1:hover,
-html header #logo h1:active {
-  text-decoration: none;
-  color: white;
-}
-html header #logo a
-html header #logo a:link,
-html header #logo a:focus,
-html header #logo a:visited,
-html header #logo a:hover,
-html header #logo a:active {
-  text-decoration: none;
-  color: white;
+header #middle .slider:before {
+  position: absolute;
+  content: "";
+  height: 19.5px;
+  width: 19.5px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
-html body header #account {
-  text-align: right;
-  width: 29%;
+header #middle input:checked + .slider {
+  background-color: rgb(255, 102, 102);
+}
+
+header #middle input:focus + .slider {
+  box-shadow: 0 0 1px rgb(255, 102, 102);
+}
+
+header #middle input:checked + .slider:before {
+  -webkit-transform: translateX(19.5px);
+  -ms-transform: translateX(19.5px);
+  transform: translateX(19.5px);
+}
+
+header #middle .slider.round {
+  border-radius: 25.5px;
+}
+
+header #middle .slider.round:before {
+  border-radius: 50%;
+}
+
+header #account {
+  height: 60px;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+header #account span a:first-child {
+  margin-right: 5px;
 }
 
 body header #header-links a,
 body header #account a {
-  color: white;
+  color: rgb(230, 57, 70);
   cursor: pointer;
-  margin: 0 5px;
   border: 2px solid rgba(0, 0, 0, 0);
-  padding: 2px 3px;
   transition: border 1s;
   -webkit-transition: border 1s;
 }
@@ -94,7 +149,6 @@ body header #account a:link,
 body header #account a:visited,
 body header #account a:hover,
 body header #account a:active {
-  color: white;
   cursor: pointer;
   text-decoration: none;
   border-radius: 3px;
@@ -103,7 +157,6 @@ body header #account a:active {
 body header #header-links a:hover,
 body header #account-links a:hover {
   text-shadow: 0 0 5px black;
-  border-color: white;
 }
 
 header #side-panel {

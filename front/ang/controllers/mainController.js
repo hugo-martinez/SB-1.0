@@ -2,12 +2,14 @@
   angular.module('skilly')
     .controller('MainController', ['$http', '$scope', '$sessionStorage',
       function($http, $scope, $sessionStorage) {
+        var self = this;
+
         var userRoles = {
           public: 1, // 001
           user: 2, //010
           admin: 4, //100
         };
-        
+
         var accessLevels = {
           public: userRoles.public |
             userRoles.user |
@@ -21,6 +23,7 @@
           userRoles: userRoles,
           accessLevels: accessLevels
         });
+
       }
     ]);
 })();
