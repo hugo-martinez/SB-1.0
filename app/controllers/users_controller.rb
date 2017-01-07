@@ -74,17 +74,6 @@ class UsersController < ApplicationController
     end
   end
 
-  def find_courses
-    if params[:user_id]
-      then courses = Course.where(user_id: params[:user_id])
-      @courses = courses
-    end
-    else
-      @courses = nil;
-    end
-  end
-
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
@@ -93,6 +82,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:user_name, :password, :nb_skilly, :first_name, :last_name, :email, :location, :age, :photo)
+      params.require(:user).permit(:user_name, :password, :nb_skilly, :first_name, :last_name, :email, :phone_number, :location, :age, :photo)
     end
 end
