@@ -37,16 +37,57 @@
         return true;
       }
 
-      courses.getCourses = function() {
+      // Get one or more courses
+      // If an incomplete course is passed as argument, it is used as a filter
+      courses.getCourses = function(courseFilterArg) {
+        var url = 'https://api-sb.herokuapp.com/courses.json';
+        var courseFilter = (typeof courseFilterArg !== "undefined")
+          ? courseFilterArg
+          : {};
+        var args = "";
+        if (courseFilter.hasOwnProperty("id")) {
+          args = args.concat(courseFilter.id);
+        }
+        if (courseFilter.hasOwnProperty("user_name")) {
+          args = args.concat(courseFilter.user_name);
+        }
+        if (courseFilter.hasOwnProperty("first_name")) {
+          args = args.concat(courseFilter.first_name);
+        }
+        if (courseFilter.hasOwnProperty("last_name")) {
+          args = args.concat(courseFilter.last_name);
+        }
+        if (courseFilter.hasOwnProperty("email")) {
+          args = args.concat(courseFilter.email);
+        }
+        if (courseFilter.hasOwnProperty("location")) {
+          args = args.concat(courseFilter.location);
+        }
         console.log("Service courses : getCourses");
-        return $http.get('https://api-sb.herokuapp.com/courses.json');
+        return $http.get(url);
       };
 
+      // Add a course
       courses.postCourse = function(course) {
-        // Insérer vérifications ici
+        // #TODO Insérer vérifications ici
 
         return $http.post('https://api-sb.herokuapp.com/courses', course);
       };
+
+      // Edit a course
+      courses.editCourse = function(course) {
+        // #TODO Insérer vérifications ici
+
+        return $http.put('https://api-sb.herokuapp.com/courses', course);
+      }
+
+      // Delete a course
+      courses.deleteCourse = function(course, userCredentials) {
+        // #TODO Vérifier que l'utilisateur est logged in et que le cours lui
+        // appartient
+
+        return $http.delete('https://api-sb.herokuapp.com/courses', course);
+      }
 
       return courses;
 
