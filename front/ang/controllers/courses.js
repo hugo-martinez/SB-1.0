@@ -4,27 +4,27 @@
       function($http, $scope, googleMaps) {
         var ctrl = this;
         $scope.courses = [];
-        
+
         $scope.isAuthentificated = function(){
           return $scope.$storage.userAccess;
         }
 
-        // Vérifie que this.title est un prefix de search 
-        // Insensible à la casse        
+        // Vérifie que this.title est un prefix de searchString
+        // Insensible à la casse
         ctrl.matchSearchAux = function(course) {
           if (course.title == null) {
             console.log(course);
             throw TypeError();
           }
           var string = String(course.title).toUpperCase();
-          if ($scope.search && toString.call($scope.search) == '[object RegExp]') {
+          if ($scope.searchString && toString.call($scope.search) == '[object RegExp]') {
             throw TypeError();
           }
           var stringLength = string.length;
-          if ($scope.search === undefined || $scope.search === "") { //Si pas de recherche tout est OK
+          if ($scope.searchString === undefined || $scope.searchString === "") { //Si pas de recherche tout est OK
             return true;
           }
-          var searchString = String($scope.search).toUpperCase();
+          var searchString = String($scope.searchString).toUpperCase();
           var searchLength = searchString.length;
           var position = arguments.length > 1 ? arguments[1] : undefined;
           // `ToInteger`
@@ -46,24 +46,11 @@
           }
           return true;
         };
-        
-        ctrl.matchSearch = function(course) {
-          var response = ctrl.matchSearchAux(course);
-          course.match = response;
-          return response;
+
+        $scope.triggerSearch = function() {
+          return;
         }
 
-        // Fonction renvoyant tous les courses qui matchent
-        ctrl.matchingCourses = function() {
-          var matchingCourses = [];
-          var length = $scope.courses.length;
-          for (var i = 0; i < length; i++) {
-            if (ctrl.matchSearch($scope.courses[i])) {
-              matchingCourses.push($scope.courses[i]);
-            }
-          }
-          return matchingCourses;
-        }
 
         $http.get('https://api-sb.herokuapp.com/courses.json').success(function(data) {
           $scope.courses = data;

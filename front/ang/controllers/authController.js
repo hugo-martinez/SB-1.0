@@ -3,11 +3,10 @@
     .controller('AuthController', ['$http', '$sessionStorage', '$scope', '$q', '$location',
       function($http, $sessionStorage, $scope, $q, $location) {
         var authCtrl = this;
-        
+
         authCtrl.login = function() {
           console.log($scope.user);
           if ($scope.user && $scope.user.pseudo) {
-            console.log('yo');
             $http
               .get('https://api-sb.herokuapp.com/users/search.json?user_name=' + $scope.user.pseudo)
               .then(function(response) {
@@ -17,21 +16,21 @@
                   console.log(response);
                   $scope.$storage.user = response;
                   $scope.$storage.userAccess = $scope.$storage.userRoles.user;
-                  $location.path('');
+                  $location.path('/#/learn');
                 }
               });
-            
+
           } else {
-            
+
           }
         };
-        
+
         authCtrl.logout = function() {
           console.log("logout clicked");
           delete $scope.$storage.user;
           delete $scope.$storage.userAccess;
           $location.path('');
         };
-      }                     
+      }
     ]);
 })();

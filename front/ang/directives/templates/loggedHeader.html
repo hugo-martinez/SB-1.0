@@ -1,14 +1,19 @@
-<div id="logo">
-  <h1><a href="/#/">Skilly Box</h1></a>
+<div id="logo" class="col-xs-2 col-xs-offset-0">
+  <a href="/#/">
+    <img class="img-responsive" ng-src="img/logo_nom_min.png" alt="Skilly Box" />
+  </a>
 </div>
-<div id="middle">
-  <p>
-    Apprendre</p>
-    <choice-button></choice-button>
-    <p>Transmettre
-  </p>
+<div id="middle" class="col-xs-4 col-xs-offset-2">
+  <p>Apprendre</p>
+  <label class="switch">
+    <input type="checkbox" id="switchCB" ng-model="isTeacher" ng-click="switchTeachLearn()">
+    <div class="slider round"></div>
+  </label>
+  <p>Transmettre</p>
 </div>
-<div id="account" ng-controller="AuthController as authCtrl">
+<div id="account"
+  ng-controller="AuthController as authCtrl"
+  class="col-xs-3 col-xs-offset-1">
   <span id="account">
     <a ng-click="authCtrl.logout()">Se déconnecter</a>
   </span>

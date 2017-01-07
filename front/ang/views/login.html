@@ -1,13 +1,25 @@
-<div class="row content" ng-controller="AuthController as authCtrl">
+<div class="row login" ng-controller="AuthController as authCtrl">
   <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
     <form novalidate name="login-form" class="form-horizontal">
       <div class="form-group">
         <label for="usr">Nom d'utilisateur :</label>
-        <input type="text" class="form-control" id="usr" ng-model='user.pseudo' />
+        <input
+          type="text"
+          class="form-control"
+          id="usr"
+          ng-model='user.pseudo'
+          tabindex="0"
+        />
       </div>
       <div class="form-group">
         <label for="pwd">Mot de passe :</label>
-        <input type="password" class="form-control" id="pwd" ng-model='user.pwd'/>
+        <input
+          type="password"
+          class="form-control"
+          id="pwd"
+          ng-model='user.pwd'
+          tabindex="1"
+        />
       </div>
       <button type="submit" class="btn btn-default" ng-click="authCtrl.login()">
         Se connecter
