@@ -9436,3 +9436,617 @@ Completed 200 OK in 241ms (Views: 230.3ms | ActiveRecord: 1.0ms)
 Completed 200 OK in 141ms (Views: 138.2ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2017-01-07 16:04:43 +0100
+DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from raise_in_transactional_callbacks= at /Users/martinez/.rvm/gems/ruby-2.3.0/gems/activerecord-5.0.0.1/lib/active_record/transactions.rb:283)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (5.1ms)
+Completed 200 OK in 34ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-07 16:04:47 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for ::1 at 2017-01-07 16:04:48 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (40.7ms)
+Completed 200 OK in 475ms (Views: 468.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:04:51 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  Rendered courses/search.json.jbuilder (0.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/martinez/SB-1.0/app/views/courses/search.json.jbuilder:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    tab << json.extract! cours, :id, :user_id, :theme_id, :...
+                              ^
+/Users/martinez/SB-1.0/app/views/courses/search.json.jbuilder:7: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...ab << json.extract! cours, :id, :user_id, :theme_id, :title,...
+...                               ^):
+  
+app/views/courses/search.json.jbuilder:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/courses/search.json.jbuilder:7: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (71.9ms)
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:04:53 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  Rendered courses/search.json.jbuilder (0.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/martinez/SB-1.0/app/views/courses/search.json.jbuilder:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+    tab << json.extract! cours, :id, :user_id, :theme_id, :...
+                              ^
+/Users/martinez/SB-1.0/app/views/courses/search.json.jbuilder:7: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...ab << json.extract! cours, :id, :user_id, :theme_id, :title,...
+...                               ^):
+  
+app/views/courses/search.json.jbuilder:7: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/courses/search.json.jbuilder:7: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (68.8ms)
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:08:05 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  Rendered courses/search.json.jbuilder (0.9ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/martinez/SB-1.0/app/views/courses/search.json.jbuilder:10: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/courses/search.json.jbuilder:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.5ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.0ms)
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:08:23 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  Rendered courses/search.json.jbuilder (11.5ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/" for ::1 at 2017-01-07 16:08:32 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.7ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 150ms (Views: 147.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:09:24 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  Rendered courses/search.json.jbuilder (0.4ms)
+Completed 200 OK in 13ms (Views: 7.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:10:06 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/_course.json.jbuilder (27.7ms)
+  Rendered courses/search.json.jbuilder (37.3ms)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<Course::ActiveRecord_Relation:0x007ff31498fa58>
+Did you mean?  ids):
+    1: json.extract! course, :id, :user_id, :theme_id, :title, :description, :cost, :location, :photo, :created_at, :updated_at
+    2: json.url course_url(course, format: :json)
+  
+app/views/courses/_course.json.jbuilder:1:in `_app_views_courses__course_json_jbuilder___3045030358354442156_70341031658540'
+app/views/courses/search.json.jbuilder:1:in `_app_views_courses_search_json_jbuilder___4294309418298637145_70341031238720'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.7ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.8ms)
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:11:00 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/_course.json.jbuilder (6.6ms)
+  Rendered courses/search.json.jbuilder (8.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<Course::ActiveRecord_Relation:0x007ff31a802fb8>
+Did you mean?  ids):
+    1: json.extract! course, :id, :user_id, :theme_id, :title, :description, :cost, :location, :photo, :created_at, :updated_at
+    2: json.url course_url(course, format: :json)
+  
+app/views/courses/_course.json.jbuilder:1:in `_app_views_courses__course_json_jbuilder___3045030358354442156_70341021395960'
+app/views/courses/search.json.jbuilder:1:in `_app_views_courses_search_json_jbuilder___4294309418298637145_70341023985500'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.8ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.8ms)
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:11:23 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/_course.json.jbuilder (5.1ms)
+  Rendered courses/search.json.jbuilder (6.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for #<Course::ActiveRecord_Relation:0x007ff31a8f3828>
+Did you mean?  ids):
+    1: json.extract! course, :id, :user_id, :theme_id, :title, :description, :cost, :location, :photo, :created_at, :updated_at
+    2: json.url course_url(course, format: :json)
+  
+app/views/courses/_course.json.jbuilder:1:in `_app_views_courses__course_json_jbuilder___3045030358354442156_70341031927280'
+app/views/courses/search.json.jbuilder:1:in `_app_views_courses_search_json_jbuilder___4294309418298637145_70341032025440'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.1ms)
+Started GET "/" for ::1 at 2017-01-07 16:27:01 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-07 16:27:06 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses" for ::1 at 2017-01-07 16:27:07 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.6ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 128ms (Views: 121.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/courses" for ::1 at 2017-01-07 16:27:08 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 136ms (Views: 134.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses.json" for ::1 at 2017-01-07 16:27:13 +0100
+Processing by CoursesController#index as JSON
+  Rendering courses/index.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/_course.json.jbuilder (1.1ms)
+  Rendered courses/_course.json.jbuilder (0.3ms)
+  Rendered courses/_course.json.jbuilder (0.5ms)
+  Rendered courses/_course.json.jbuilder (0.5ms)
+  Rendered courses/_course.json.jbuilder (0.3ms)
+  Rendered courses/_course.json.jbuilder (0.3ms)
+  Rendered courses/index.json.jbuilder (10.3ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses.json" for ::1 at 2017-01-07 16:27:19 +0100
+Processing by CoursesController#index as JSON
+  Rendering courses/index.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/_course.json.jbuilder (1.1ms)
+  Rendered courses/_course.json.jbuilder (0.3ms)
+  Rendered courses/_course.json.jbuilder (1.0ms)
+  Rendered courses/_course.json.jbuilder (0.7ms)
+  Rendered courses/_course.json.jbuilder (0.8ms)
+  Rendered courses/_course.json.jbuilder (0.3ms)
+  Rendered courses/index.json.jbuilder (10.7ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses" for ::1 at 2017-01-07 16:27:19 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 105ms (Views: 102.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courses/" for ::1 at 2017-01-07 16:27:20 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 130ms (Views: 128.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:27:20 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  Rendered courses/search.json.jbuilder (0.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/martinez/SB-1.0/app/views/courses/search.json.jbuilder:4: syntax error, unexpected ',', expecting keyword_then or ';' or '\n'
+    :id, :user_id, :theme_id, :title,...
+        ^):
+  
+app/views/courses/search.json.jbuilder:4: syntax error, unexpected ',', expecting keyword_then or ';' or '\n'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.1ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.5ms)
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:27:22 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  Rendered courses/search.json.jbuilder (0.7ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/martinez/SB-1.0/app/views/courses/search.json.jbuilder:4: syntax error, unexpected ',', expecting keyword_then or ';' or '\n'
+    :id, :user_id, :theme_id, :title,...
+        ^):
+  
+app/views/courses/search.json.jbuilder:4: syntax error, unexpected ',', expecting keyword_then or ';' or '\n'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.1ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.7ms)
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:27:25 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  Rendered courses/search.json.jbuilder (1.2ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/martinez/SB-1.0/app/views/courses/search.json.jbuilder:4: syntax error, unexpected ',', expecting keyword_then or ';' or '\n'
+    :id, :user_id, :theme_id, :title,...
+        ^):
+  
+app/views/courses/search.json.jbuilder:4: syntax error, unexpected ',', expecting keyword_then or ';' or '\n'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.1ms)
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:27:44 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (7.6ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `first' for #<Course:0x007ff31abbb8d0>):
+    2:     json.set! :status, 'Error 404 : not found'
+    3: elsif
+    4:     json.pref @courses.each do |cours|
+    5:         json.id cours.first.id
+    6:         json.user_id cours.first.user_id
+    7:         json.theme_id cours.first.theme_id
+    8:         json.title cours.first.title
+  
+app/views/courses/search.json.jbuilder:5:in `block in _app_views_courses_search_json_jbuilder___4294309418298637145_70341051123120'
+app/views/courses/search.json.jbuilder:4:in `_app_views_courses_search_json_jbuilder___4294309418298637145_70341051123120'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.5ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.6ms)
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:28:27 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (2.2ms)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:28:53 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (2.7ms)
+Completed 200 OK in 15ms (Views: 12.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:29:09 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (92.1ms)
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `json' for #<#<Class:0x007ff31742cba8>:0x007ff31b1ac2f8>
+Did you mean?  json_escape
+               JSON):
+    1: if @courses.nil?
+    2:     json.set! :status, 'Error 404 : not found'
+    3: elsif
+    4:     json @courses.each do |cours|
+    5:         json.id cours.id
+    6:         json.user_id cours.user_id
+    7:         json.theme_id cours.theme_id
+  
+app/views/courses/search.json.jbuilder:4:in `_app_views_courses_search_json_jbuilder___4294309418298637145_70341054260840'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.8ms)
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:29:19 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (2.5ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:29:54 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (2.9ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses.json" for ::1 at 2017-01-07 16:30:16 +0100
+Processing by CoursesController#index as JSON
+  Rendering courses/index.json.jbuilder
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/_course.json.jbuilder (0.9ms)
+  Rendered courses/_course.json.jbuilder (0.5ms)
+  Rendered courses/_course.json.jbuilder (0.3ms)
+  Rendered courses/_course.json.jbuilder (0.3ms)
+  Rendered courses/_course.json.jbuilder (0.4ms)
+  Rendered courses/_course.json.jbuilder (0.4ms)
+  Rendered courses/index.json.jbuilder (8.5ms)
+Completed 200 OK in 17ms (Views: 14.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses.json" for ::1 at 2017-01-07 16:30:34 +0100
+Processing by CoursesController#index as JSON
+  Rendering courses/index.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/_course.json.jbuilder (0.7ms)
+  Rendered courses/_course.json.jbuilder (0.4ms)
+  Rendered courses/_course.json.jbuilder (0.7ms)
+  Rendered courses/_course.json.jbuilder (0.4ms)
+  Rendered courses/_course.json.jbuilder (0.7ms)
+  Rendered courses/_course.json.jbuilder (0.3ms)
+  Rendered courses/index.json.jbuilder (8.7ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses" for ::1 at 2017-01-07 16:30:35 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 140ms (Views: 137.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/" for ::1 at 2017-01-07 16:30:40 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 117ms (Views: 115.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:30:41 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (2.4ms)
+Completed 200 OK in 11ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:30:42 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.4ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (4.3ms)
+Completed 200 OK in 16ms (Views: 13.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses/" for ::1 at 2017-01-07 16:30:53 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 95ms (Views: 93.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses" for ::1 at 2017-01-07 16:30:54 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (13.8ms)
+Started GET "/courses" for ::1 at 2017-01-07 16:30:54 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.5ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 208ms (Views: 205.2ms | ActiveRecord: 0.3ms)
+
+
+Completed 200 OK in 140ms (Views: 136.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/courses/6/edit" for ::1 at 2017-01-07 16:30:57 +0100
+Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering courses/edit.html.erb within layouts/application
+  Rendered courses/_form.html.erb (20.5ms)
+  Rendered courses/edit.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 122ms (Views: 103.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/courses/6" for ::1 at 2017-01-07 16:31:01 +0100
+Processing by CoursesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jFA0/cQ9AWZixbuYAjddE6BTMtmzTQK4eGyZauSo/W3SO1xvo9WojV4qnMCGg7Pvl8xk+8GnU2BEeSwXTHhNqQ==", "course"=>{"user_id"=>"2", "theme_id"=>"1", "title"=>"Échecs", "description"=>"Cours d'échecs pour tous les niveaux.", "cost"=>"90", "location"=>"Paris", "photo"=>"img/courses/chess.jpg"}, "commit"=>"Update Course", "id"=>"6"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "courses" SET "user_id" = ?, "updated_at" = ? WHERE "courses"."id" = ?[0m  [["user_id", 2], ["updated_at", 2017-01-07 15:31:01 UTC], ["id", 6]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/courses/6
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/courses/6" for ::1 at 2017-01-07 16:31:01 +0100
+Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT  "courses".* FROM "courses" WHERE "courses"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering courses/show.html.erb within layouts/application
+  Rendered courses/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 92ms (Views: 89.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses" for ::1 at 2017-01-07 16:31:03 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.3ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 111ms (Views: 108.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/courses/" for ::1 at 2017-01-07 16:31:08 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.1ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 75ms (Views: 72.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:31:08 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (1.9ms)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:31:10 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (2.2ms)
+Completed 200 OK in 12ms (Views: 9.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:33:12 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (1.7ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/search.json?user_id=1" for ::1 at 2017-01-07 16:33:21 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered courses/search.json.jbuilder (1.9ms)
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/courses/search.json?user_id=2" for ::1 at 2017-01-07 16:33:22 +0100
+Processing by CoursesController#search as JSON
+  Parameters: {"user_id"=>"2"}
+  Rendering courses/search.json.jbuilder
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses" WHERE "courses"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered courses/search.json.jbuilder (1.4ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+

@@ -65,7 +65,7 @@ class CoursesController < ApplicationController
   def search
     if params[:user_id]
       then
-      @course = Course.where(user_id: params[:user_id])
+      @courses = Course.where(user_id: params[:user_id])
     end
   end
 
