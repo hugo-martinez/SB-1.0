@@ -1,5 +1,8 @@
 <div class="row login" ng-controller="AuthController as authCtrl">
   <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3">
+    <div class="alert alert-danger" ng-show="invalidCredentials">
+      <p>Identifiants invalides, réessayez.</p>
+    </div>
     <form novalidate name="login-form" class="form-horizontal">
       <div class="form-group">
         <label for="usr">Nom d'utilisateur :</label>
@@ -8,7 +11,7 @@
           class="form-control"
           id="usr"
           ng-model='user.pseudo'
-          tabindex="0"
+          tabindex="1"
         />
       </div>
       <div class="form-group">
@@ -18,10 +21,13 @@
           class="form-control"
           id="pwd"
           ng-model='user.pwd'
-          tabindex="1"
+          tabindex="2"
         />
       </div>
-      <button type="submit" class="btn btn-default" ng-click="authCtrl.login()">
+      <button
+        type="submit"
+        class="btn btn-default" tabindex="3"
+        ng-click="authCtrl.login()">
         Se connecter
       </button>
     </form>

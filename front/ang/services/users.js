@@ -1,7 +1,7 @@
 (function() {
   angular.module('skilly')
-    .factory('users', ['$http', '$q', '$sessionStorage', '$scope',
-    function($http, $q, $sessionStorage, $scope) {
+    .factory('users', ['$http', '$q',
+    function($http, $q) {
 
       // #TODO integrate this service into authController
 
@@ -16,13 +16,13 @@
           deffered.reject("Invalid arguments.");
         } else {
           url = 'https://api-sb.herokuapp.com/users/search.json?user_name=';
-          url = url.concat($scope.user.pseudo);
+          url = url.concat(user_name);
+          url = url.concat("&password=");
+          url = url.concat(password);
           $http.get(url).then(function(response) {
-            if (response.error) {
+            if (response.data.error) {
               deffered.reject("Error on the server-side when trying to log in.");
             } else {
-              $scope.$storage.user = response;
-              $scope.$storage.userAccess = $scope.$storage.userRoles.user;
               deffered.resolve(response);
             }
           }, function(response) {

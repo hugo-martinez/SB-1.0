@@ -1,10 +1,11 @@
 (function() {
   angular.module('skilly')
-    .controller('AuthController', ['$http', '$sessionStorage', '$scope', '$q', '$location',
-      function($http, $sessionStorage, $scope, $q, $location) {
+    .controller('AuthController',
+      ['$http', '$sessionStorage', '$scope', '$q', '$location', 'users',
+      function($http, $sessionStorage, $scope, $q, $location, users) {
         var authCtrl = this;
 
-        authCtrl.login = function() {
+        /*authCtrl.login = function() {
           console.log($scope.user);
           if ($scope.user && $scope.user.pseudo) {
             $http
@@ -23,7 +24,20 @@
           } else {
 
           }
-        };
+        };*/
+
+        authCtrl.login = function() {
+          users.
+          login($scope.user.pseudo, $scope.user.pwd).
+          then(function(user) {
+            $scope.$storage.user = user;
+            $scope.$storage.userAccess = $scope.$storage.userRoles.user;
+            $location.path('/learn');
+          }, function(error) {
+            $scope.invalidCredentials = true;
+            console.log(error);
+          });
+        }
 
         authCtrl.logout = function() {
           console.log("logout clicked");
