@@ -5,8 +5,11 @@
     .when('/learn', {
       templateUrl: "ang/views/landingLearn.html"
     })
+    .when('/myprofile', {
+      templateUrl: "ang/views/myprofile.html"
+    })
     .when("/", {
-      redirectTo: "/learn"
+      redirectTo: "/myprofile"
     })
     .when('/teach', {
       templateUrl: "ang/views/landingTeach.html"
