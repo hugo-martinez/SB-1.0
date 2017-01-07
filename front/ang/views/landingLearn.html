@@ -1,0 +1,22 @@
+<div class="row" id="recherche">
+  <div class="col-xs-6 col-xs-offset-3" id="choix-recherche">
+
+    <form id="form-recherche">
+      <p>Recherche</p>
+      <input
+        type="text"
+        placeholder="Votre recherche..."
+        ng-model="searchString"
+      />
+      <input type="text" placeholder="Votre position..." />
+    </form>
+  </div>
+</div>
+
+<courses-feed></courses-feed>
+
+<div class="row" id="link-to-add">
+  <a href="/#/askforcourse"><button class="customBtn">
+    Effectuer une demande de cours
+  </button></a>
+</div>
