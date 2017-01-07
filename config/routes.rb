@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  resources :dispo_users
   get 'users/search.json' => 'users#search'
   get 'users/find_courses.json' => 'users#find_courses'
   get 'courses/search.json' => 'courses#search'
+  resources :dispo_users
   resources :lessons
   resources :keyword_courses
   resources :keyword_dems
