@@ -10,8 +10,7 @@
       <label for="showMap-id">Montrer les résultats sous forme de carte</label>
     </form>
     <div class="row"
-         ng-repeat="course in courses"
-         ng-hide="! coursesCtrl.matchSearchAux(course) || showMap">
+         ng-repeat="course in courses">
       <course course="course"></course>
     </div>
     <courses-map

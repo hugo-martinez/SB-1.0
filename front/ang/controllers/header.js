@@ -24,19 +24,19 @@
         // sans l'utiliser
         var patt = /\/teach/;
         var switchBtn = $('.switch input');
-        console.log("Hello you");
-        console.log($scope.isTeacher);
-        console.log(switchBtn);
-        console.log($location.absUrl());
-        console.log(patt.test($location.absUrl()));
+        //console.log("Hello you");
+        //console.log($scope.isTeacher);
+        //console.log(switchBtn);
+        //console.log($location.absUrl());
+        //console.log(patt.test($location.absUrl()));
         if (
           typeof $scope.isTeacher == 'undefined'
           && patt.test($location.absUrl())
         ) {
-          console.log("Going in");
+          //console.log("Going in");
           $('.switch').trigger('click');
         }
-        console.log($scope.isTeacher);
+        //console.log($scope.isTeacher);
       }
     ]);
 })();

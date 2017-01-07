@@ -1,7 +1,8 @@
 (function() {
   angular.module('skilly-courses')
-    .controller('CoursesController', ['$http', '$scope', 'googleMaps',
-      function($http, $scope, googleMaps) {
+    .controller('CoursesController', ['$http', '$scope', 'googleMaps', 'courses',
+      function($http, $scope, googleMaps, courses) {
+
         var ctrl = this;
         $scope.courses = [];
 
@@ -9,58 +10,48 @@
           return $scope.$storage.userAccess;
         }
 
-        // Vérifie que this.title est un prefix de searchString
-        // Insensible à la casse
-        ctrl.matchSearchAux = function(course) {
-          if (course.title == null) {
-            console.log(course);
-            throw TypeError();
-          }
-          var string = String(course.title).toUpperCase();
-          if ($scope.searchString && toString.call($scope.search) == '[object RegExp]') {
-            throw TypeError();
-          }
-          var stringLength = string.length;
-          if ($scope.searchString === undefined || $scope.searchString === "") { //Si pas de recherche tout est OK
-            return true;
-          }
-          var searchString = String($scope.searchString).toUpperCase();
-          var searchLength = searchString.length;
-          var position = arguments.length > 1 ? arguments[1] : undefined;
-          // `ToInteger`
-          var pos = position ? Number(position) : 0;
-          if (pos != pos) { // better `isNaN`
-            pos = 0;
-          }
-          var start = Math.min(Math.max(pos, 0), stringLength);
-          // Avoid the `indexOf` call if no match is possible
-          if (searchLength + start > stringLength) {
-            return false;
-          }
-          var index = -1;
-          while (++index < searchLength) {
-
-            if (string.charCodeAt(start + index) != searchString.charCodeAt(index)) {
-              return false;
-            }
-          }
-          return true;
-        };
+        var promise = courses.getCourses();
+        console.log("Received promise type of : " + typeof promise);
+        promise.then(function(data) {
+          console.log("Success")
+          $scope.courses = data.data;
+        }, function(data) {
+          console.log("Error fetching courses using courses service.");
+        });
 
         $scope.triggerSearch = function() {
-          return;
+          var tmpCourses = []
+          console.log("triggerSearch called with searchString : " + $scope.searchString);
+          $scope.courses.forEach(function(crs) {
+            if (courses.coursePrefixMatch(crs, $scope.searchString)) {
+              tmpCourses.push(crs);
+            }
+            $scope.courses = tmpCourses;
+          });
         }
 
-
-        $http.get('https://api-sb.herokuapp.com/courses.json').success(function(data) {
-          $scope.courses = data;
-          console.log($scope.courses);
-          window.MY_SCOPE = $scope;
-          var n = $scope.courses.length;
-          var response;
-          for (var i = 0; i < n; i++) {
-            response = googleMaps.findFromId("ChIJ7ZbVdz5w5kcRwtlG_IqxhmM");
+        $scope.$watch(
+          function(scope) { return scope.searchString; },
+          function() {
+            $scope.triggerSearch();
           }
+        );
+
+        var testCourse = {
+          user_name: "TestUser",
+          password: "helloworld",
+          nb_skilly: 100,
+          first_name: "Foo",
+          last_name: "Bar",
+          email: "foo@bar.fr",
+          location: "In Uranus",
+          age: 192,
+        };
+
+        courses.postCourse(testCourse).then(function(data) {
+          console.log("Post test success");
+        }, function(data) {
+          console.log("Post test error");
         });
       }
     ]);
