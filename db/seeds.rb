@@ -94,9 +94,23 @@ Course.create(
 )
 
 Demand.create(
+	user_id: 1,
+	theme_id: 1,
+	title: 'Échecs',
+	description: "Cherche des cours d'échecs pour débutant.",
+	cost: 90,
+	location: 'Paris',
+	photo: 'img/courses/chess.jpg'
+)
+
+Demand.create(
 	user_id: 2,
 	theme_id: 1,
-	comment: 'Recherche d un cours de vulgarisation scientifique sur toutes les technologies innovantes tel que la blockchain, le deep-learning ou les IoT.'
+	title: 'Poker',
+	description: "Cherche cours pour apprendre à compter les cartes au Poker.",
+	cost: 90,
+	location: 'Paris',
+	photo: 'img/courses/chess.jpg'
 )
 
 Keyword.create(
