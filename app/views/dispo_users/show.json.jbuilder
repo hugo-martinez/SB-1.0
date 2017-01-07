@@ -1,0 +1,1 @@
+json.partial! "dispo_users/dispo_user", dispo_user: @dispo_user

@@ -1,1 +1,0 @@
-json.array! @dispo_courses, partial: 'dispo_courses/dispo_course', as: :dispo_course

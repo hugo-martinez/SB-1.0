@@ -1,0 +1,2 @@
+class DispoUser < ApplicationRecord
+end

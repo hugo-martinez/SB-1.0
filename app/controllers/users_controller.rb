@@ -67,9 +67,23 @@ class UsersController < ApplicationController
   def search
     if params[:user_name]
       then
-      @user = User.where("lower(user_name) = ?", params[:user_name].downcase).first
+      user_n = User.where("lower(user_name) = ?", params[:user_name].downcase)
+      if params[:password]
+        then @user = user_n.where(password: params[:password]).first
+      end
     end
   end
+
+  def find_courses
+    if params[:user_id]
+      then courses = Course.where(user_id: params[:user_id])
+      @courses = courses
+    end
+    else
+      @courses = nil;
+    end
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

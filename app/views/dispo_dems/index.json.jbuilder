@@ -1,1 +1,0 @@
-json.array! @dispo_dems, partial: 'dispo_dems/dispo_dem', as: :dispo_dem

@@ -1,2 +1,0 @@
-class DispoCourse < ApplicationRecord
-end

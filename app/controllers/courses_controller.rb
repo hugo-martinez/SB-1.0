@@ -1,5 +1,6 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: [:show, :edit, :update, :destroy]
+  #skip_before_filter  :verify_authenticity_token
 
   # GET /courses
   # GET /courses.json
@@ -64,7 +65,7 @@ class CoursesController < ApplicationController
   def search
     if params[:user_id]
       then
-      @course = Course.where(user_id: params[:user_id]).first
+      @course = Course.where(user_id: params[:user_id])
     end
   end
 
