@@ -11542,3 +11542,1379 @@ Processing by DemandsController#search as JSON
 Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/" for ::1 at 2017-01-07 23:54:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.1) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.1) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.0ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.2ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from load at /Users/martinez/.rvm/gems/ruby-2.3.0/bin/rake:23)
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateThemes (20161203135005)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "themes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161203135005"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywords (20161203172411)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "keywords" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161203172411"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCourses (20161205132404)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "theme_id" integer, "title" varchar, "description" varchar, "cost" integer, "location" varchar, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132404"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywordCourses (20161205132457)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "keyword_courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "keyword_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132457"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywordDems (20161205132543)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "keyword_dems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "dem_id" integer, "keyword_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132543"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20161205140357)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_name" varchar, "password" varchar, "nb_skilly" integer, "first_name" varchar, "last_name" varchar, "email" varchar, "location" varchar, "age" integer, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205140357"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDispoUsers (20170107105919)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "dispo_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "dispo" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107105919"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPhoneNumberToUsers (20170107165533)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "phone_number" integer[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107165533"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDemands (20170107211733)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "demands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "theme_id" integer, "title" varchar, "description" varchar, "cost" integer, "location" varchar, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107211733"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateLessons (20170107223927)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "lessons" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" integer, "teacher_id" integer, "pupil_id" integer, "type_match_id" integer, "date" date, "cost" integer, "status" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107223927"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "themes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tech"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "password", "nb_skilly", "first_name", "last_name", "email", "location", "age", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_name", "Hugo"], ["password", "bonjour"], ["nb_skilly", 100], ["first_name", "hugo"], ["last_name", "martinez"], ["email", "hugo@mail.com"], ["location", "Paris"], ["age", 23], ["photo", "http://images.google.fr/imgres?imgurl=http%3A%2F%2Fcdn.deguisetoi.fr%2Fimages%2Frep_art%2Fgra%2F174%2F7%2F174755%2Fsombrero-mexicain-adulte_4.jpg&imgrefurl=http%3A%2F%2Fwww.deguisetoi.fr%2Fp-174755-sombrero-mexicain-adulte.html%3Ftype%3Dproduct&h=2400&w=1744&tbnid=B_Is2M1ceYSe8M%3A&vet=1&docid=xbpKeSv419By6M&ei=oW1FWMO6IoG0aYGRm3g&tbm=isch&client=safari&iact=rc&uact=3&dur=191&page=0&start=0&ndsp=21&ved=0ahUKEwiDj9qglt3QAhUBWhoKHYHIBg8QMwgwKAAwAA&bih=800&biw=1280"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "password", "nb_skilly", "first_name", "last_name", "email", "location", "age", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_name", "Thomas"], ["password", "hello"], ["nb_skilly", 150], ["first_name", "thomas"], ["last_name", "bessiere"], ["email", "thomas@mail.com"], ["location", "Toulouse"], ["age", 23], ["photo", "http://images.google.fr/imgres?imgurl=https%3A%2F%2Fmedia.licdn.com%2Fmpr%2Fmpr%2Fshrinknp_200_200%2FAAEAAQAAAAAAAAY6AAAAJDMwYWE1YzA4LTcwOTktNDAxMi1hZTMwLTMxZWYxMjQ3MDk1Ng.jpg&imgrefurl=https%3A%2F%2Ffr.linkedin.com%2Fin%2Fthomas-bessiere-952340a6&h=200&w=200&tbnid=Pxc20z7VbBFaAM%3A&vet=1&docid=UAHbr5NHdtBvOM&ei=VW5FWMDgO8e5asW3l5AB&tbm=isch&client=safari&iact=rc&uact=3&dur=238&page=0&start=0&ndsp=27&ved=0ahUKEwiA3932lt3QAhXHnBoKHcXbBRIQMwgeKAEwAQ&bih=800&biw=1280"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Vulgarisation Blockchain"], ["description", "Cours sur les fondamentaux de la Blockchain, cette nouvelle technologie qui vient disrupter l univers des banques et des assurances. Cours de vulgarisation, pour tous les niveaux."], ["cost", 110], ["location", "Toulouse"], ["photo", "img/courses/blockchain.jpeg"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Sculpture pour débutants"], ["description", "Session d'apprentissage de la sculpture pour les personnes n'ayant pas d'expérience."], ["cost", 60], ["location", "Egypte"], ["photo", "img/courses/sculpture.jpg"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Sculpture avancée"], ["description", "Sculpture pour ceux qui ont déjà de l'expérience dans le domaine."], ["cost", 90], ["location", "Egypte"], ["photo", "img/courses/sculpture2.jpg"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Bricolage"], ["description", "Cours de bricolage pour pouvoir prendre soin de votre maison/appartement."], ["cost", 70], ["location", "Nice"], ["photo", "img/courses/tools.jpg"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Kamasutra"], ["description", "Cours de kamasutra pour faire crier votre petit amie ou simplement prendre un peu de bon temps."], ["cost", 250], ["location", "Bois de Boulogne"], ["photo", "img/courses/woods.jpg"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Échecs"], ["description", "Cours d'échecs pour tous les niveaux."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "demands" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Échecs"], ["description", "Cherche des cours d'échecs pour débutant."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "demands" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["theme_id", 1], ["title", "Poker"], ["description", "Cherche cours pour apprendre à compter les cartes au Poker."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Blockchain"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Vulgarisation"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Deep-Learning"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "IoT"], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_courses" ("course_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 1], ["keyword_id", 1], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_courses" ("course_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 1], ["keyword_id", 2], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 2], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 1], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 3], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 4], ["created_at", 2017-01-07 22:54:53 UTC], ["updated_at", 2017-01-07 22:54:53 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2017-01-07 23:55:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.2ms)
+Completed 200 OK in 21ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-07 23:55:09 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.2ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/courses/" for ::1 at 2017-01-07 23:55:41 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 483ms (Views: 478.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/courses" for ::1 at 2017-01-07 23:55:43 +0100
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb within layouts/application
+  [1m[36mCourse Load (0.2ms)[0m  [1m[34mSELECT "courses".* FROM "courses"[0m
+  Rendered courses/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 144ms (Views: 142.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2017-01-07 23:55:44 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lessons" for ::1 at 2017-01-07 23:55:44 +0100
+Processing by LessonsController#index as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  [1m[36mLesson Load (0.3ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 106ms (Views: 100.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/lessons" for ::1 at 2017-01-07 23:55:47 +0100
+Processing by LessonsController#index as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  [1m[36mLesson Load (0.3ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lessons/new" for ::1 at 2017-01-07 23:55:50 +0100
+Processing by LessonsController#new as HTML
+  Rendering lessons/new.html.erb within layouts/application
+  Rendered lessons/_form.html.erb (21.5ms)
+  Rendered lessons/new.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 124ms (Views: 100.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/lessons" for ::1 at 2017-01-07 23:56:32 +0100
+Processing by LessonsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yRwiQI0pFEve2rYQ4N1ioRqHYZJdK5rpcenkZe+mduuZBaUPGEvB/Pd8yPueoI2SrpQcyGkPKtVAElXEMgcLwg==", "lesson"=>{"type"=>"0", "teacher_id"=>"1", "pupil_id"=>"2", "type_match_id"=>"1", "date(1i)"=>"2017", "date(2i)"=>"1", "date(3i)"=>"7", "cost"=>"10", "status"=>"0"}, "commit"=>"Create Lesson"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: '0'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Lesson.inheritance_column to use another column for that information.):
+  
+app/controllers/lessons_controller.rb:27:in `create'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.1ms)
+Started GET "/lessons/new" for ::1 at 2017-01-07 23:58:27 +0100
+Processing by LessonsController#new as HTML
+  Rendering lessons/new.html.erb within layouts/application
+  Rendered lessons/_form.html.erb (6.0ms)
+  Rendered lessons/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 115ms (Views: 112.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/lessons" for ::1 at 2017-01-07 23:58:31 +0100
+Processing by LessonsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DkI5MB/JIcb+xFjBgSO8T46iNOa13DlqQ4L3zdIms6elmBDWpyp6H5RPqJmFfx6GNaLENcJHbnOAOGmPCyye2w==", "lesson"=>{"type"=>"1", "teacher_id"=>"1", "pupil_id"=>"2", "type_match_id"=>"1", "date(1i)"=>"2017", "date(2i)"=>"1", "date(3i)"=>"7", "cost"=>"10", "status"=>"1"}, "commit"=>"Create Lesson"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: '1'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Lesson.inheritance_column to use another column for that information.):
+  
+app/controllers/lessons_controller.rb:27:in `create'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (55.2ms)
+Started GET "/lessons/new" for ::1 at 2017-01-07 23:58:44 +0100
+Processing by LessonsController#new as HTML
+  Rendering lessons/new.html.erb within layouts/application
+  Rendered lessons/_form.html.erb (8.1ms)
+  Rendered lessons/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 108ms (Views: 104.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/lessons" for ::1 at 2017-01-07 23:58:56 +0100
+Processing by LessonsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l1GVsSmaP3kpe+I2Z8iVWgjjBydXfK1Gps4Mb13AA+3HSBL+vPjqzgDdnN0ZtXppvPB6fWNYHXqXNb3OgGF+xA==", "lesson"=>{"type"=>"1", "teacher_id"=>"1", "pupil_id"=>"2", "type_match_id"=>"1", "date(1i)"=>"2017", "date(2i)"=>"1", "date(3i)"=>"7", "cost"=>"3", "status"=>"3"}, "commit"=>"Create Lesson"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: '1'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Lesson.inheritance_column to use another column for that information.):
+  
+app/controllers/lessons_controller.rb:27:in `create'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (53.8ms)
+Started POST "/lessons" for ::1 at 2017-01-07 23:59:05 +0100
+Processing by LessonsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DkI5MB/JIcb+xFjBgSO8T46iNOa13DlqQ4L3zdIms6elmBDWpyp6H5RPqJmFfx6GNaLENcJHbnOAOGmPCyye2w==", "lesson"=>{"type"=>"1", "teacher_id"=>"1", "pupil_id"=>"2", "type_match_id"=>"1", "date(1i)"=>"2017", "date(2i)"=>"1", "date(3i)"=>"7", "cost"=>"10", "status"=>"3"}, "commit"=>"Create Lesson"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: '1'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Lesson.inheritance_column to use another column for that information.):
+  
+app/controllers/lessons_controller.rb:27:in `create'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.3ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from load at /Users/martinez/.rvm/gems/ruby-2.3.0/bin/rake:23)
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateThemes (20161203135005)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "themes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161203135005"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywords (20161203172411)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "keywords" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161203172411"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCourses (20161205132404)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "theme_id" integer, "title" varchar, "description" varchar, "cost" integer, "location" varchar, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132404"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywordCourses (20161205132457)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "keyword_courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "keyword_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132457"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywordDems (20161205132543)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "keyword_dems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "dem_id" integer, "keyword_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132543"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20161205140357)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_name" varchar, "password" varchar, "nb_skilly" integer, "first_name" varchar, "last_name" varchar, "email" varchar, "location" varchar, "age" integer, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205140357"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDispoUsers (20170107105919)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "dispo_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "dispo" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107105919"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPhoneNumberToUsers (20170107165533)
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "phone_number" integer[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107165533"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDemands (20170107211733)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "demands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "theme_id" integer, "title" varchar, "description" varchar, "cost" integer, "location" varchar, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107211733"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateLessons (20170107223927)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "lessons" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" integer, "teacher_id" integer, "pupil_id" integer, "type_match_id" integer, "date" date, "cost" integer, "status" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107223927"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "themes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tech"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "password", "nb_skilly", "first_name", "last_name", "email", "location", "age", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_name", "Hugo"], ["password", "bonjour"], ["nb_skilly", 100], ["first_name", "hugo"], ["last_name", "martinez"], ["email", "hugo@mail.com"], ["location", "Paris"], ["age", 23], ["photo", "http://images.google.fr/imgres?imgurl=http%3A%2F%2Fcdn.deguisetoi.fr%2Fimages%2Frep_art%2Fgra%2F174%2F7%2F174755%2Fsombrero-mexicain-adulte_4.jpg&imgrefurl=http%3A%2F%2Fwww.deguisetoi.fr%2Fp-174755-sombrero-mexicain-adulte.html%3Ftype%3Dproduct&h=2400&w=1744&tbnid=B_Is2M1ceYSe8M%3A&vet=1&docid=xbpKeSv419By6M&ei=oW1FWMO6IoG0aYGRm3g&tbm=isch&client=safari&iact=rc&uact=3&dur=191&page=0&start=0&ndsp=21&ved=0ahUKEwiDj9qglt3QAhUBWhoKHYHIBg8QMwgwKAAwAA&bih=800&biw=1280"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "password", "nb_skilly", "first_name", "last_name", "email", "location", "age", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_name", "Thomas"], ["password", "hello"], ["nb_skilly", 150], ["first_name", "thomas"], ["last_name", "bessiere"], ["email", "thomas@mail.com"], ["location", "Toulouse"], ["age", 23], ["photo", "http://images.google.fr/imgres?imgurl=https%3A%2F%2Fmedia.licdn.com%2Fmpr%2Fmpr%2Fshrinknp_200_200%2FAAEAAQAAAAAAAAY6AAAAJDMwYWE1YzA4LTcwOTktNDAxMi1hZTMwLTMxZWYxMjQ3MDk1Ng.jpg&imgrefurl=https%3A%2F%2Ffr.linkedin.com%2Fin%2Fthomas-bessiere-952340a6&h=200&w=200&tbnid=Pxc20z7VbBFaAM%3A&vet=1&docid=UAHbr5NHdtBvOM&ei=VW5FWMDgO8e5asW3l5AB&tbm=isch&client=safari&iact=rc&uact=3&dur=238&page=0&start=0&ndsp=27&ved=0ahUKEwiA3932lt3QAhXHnBoKHcXbBRIQMwgeKAEwAQ&bih=800&biw=1280"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Vulgarisation Blockchain"], ["description", "Cours sur les fondamentaux de la Blockchain, cette nouvelle technologie qui vient disrupter l univers des banques et des assurances. Cours de vulgarisation, pour tous les niveaux."], ["cost", 110], ["location", "Toulouse"], ["photo", "img/courses/blockchain.jpeg"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Sculpture pour débutants"], ["description", "Session d'apprentissage de la sculpture pour les personnes n'ayant pas d'expérience."], ["cost", 60], ["location", "Egypte"], ["photo", "img/courses/sculpture.jpg"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Sculpture avancée"], ["description", "Sculpture pour ceux qui ont déjà de l'expérience dans le domaine."], ["cost", 90], ["location", "Egypte"], ["photo", "img/courses/sculpture2.jpg"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Bricolage"], ["description", "Cours de bricolage pour pouvoir prendre soin de votre maison/appartement."], ["cost", 70], ["location", "Nice"], ["photo", "img/courses/tools.jpg"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Kamasutra"], ["description", "Cours de kamasutra pour faire crier votre petit amie ou simplement prendre un peu de bon temps."], ["cost", 250], ["location", "Bois de Boulogne"], ["photo", "img/courses/woods.jpg"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Échecs"], ["description", "Cours d'échecs pour tous les niveaux."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "demands" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Échecs"], ["description", "Cherche des cours d'échecs pour débutant."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "demands" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["theme_id", 1], ["title", "Poker"], ["description", "Cherche cours pour apprendre à compter les cartes au Poker."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Blockchain"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Vulgarisation"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Deep-Learning"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "IoT"], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_courses" ("course_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 1], ["keyword_id", 1], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_courses" ("course_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 1], ["keyword_id", 2], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 2], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 1], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 3], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 4], ["created_at", 2017-01-07 23:01:51 UTC], ["updated_at", 2017-01-07 23:01:51 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/lessons/new" for ::1 at 2017-01-08 00:02:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LessonsController#new as HTML
+  Rendering lessons/new.html.erb within layouts/application
+  Rendered lessons/_form.html.erb (34.6ms)
+  Rendered lessons/new.html.erb within layouts/application (38.1ms)
+Completed 200 OK in 553ms (Views: 531.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/lessons/new" for ::1 at 2017-01-08 00:02:11 +0100
+Processing by LessonsController#new as HTML
+  Rendering lessons/new.html.erb within layouts/application
+  Rendered lessons/_form.html.erb (7.1ms)
+  Rendered lessons/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 139ms (Views: 137.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lessons" for ::1 at 2017-01-08 00:02:11 +0100
+Processing by LessonsController#index as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  [1m[36mLesson Load (0.2ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 89ms (Views: 86.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lessons" for ::1 at 2017-01-08 00:02:12 +0100
+Processing by LessonsController#index as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  [1m[36mLesson Load (0.1ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 128ms (Views: 125.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/lessons" for ::1 at 2017-01-08 00:18:01 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.1) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.1) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+rack-cors (0.4.0) lib/rack/cors.rb:80:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.1ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from load at /Users/martinez/.rvm/gems/ruby-2.3.0/bin/rake:23)
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateThemes (20161203135005)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "themes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161203135005"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywords (20161203172411)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "keywords" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161203172411"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCourses (20161205132404)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "theme_id" integer, "title" varchar, "description" varchar, "cost" integer, "location" varchar, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132404"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywordCourses (20161205132457)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "keyword_courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "keyword_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132457"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywordDems (20161205132543)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "keyword_dems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "dem_id" integer, "keyword_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132543"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20161205140357)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_name" varchar, "password" varchar, "nb_skilly" integer, "first_name" varchar, "last_name" varchar, "email" varchar, "location" varchar, "age" integer, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205140357"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDispoUsers (20170107105919)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "dispo_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "dispo" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107105919"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPhoneNumberToUsers (20170107165533)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "phone_number" integer[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107165533"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDemands (20170107211733)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "demands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "theme_id" integer, "title" varchar, "description" varchar, "cost" integer, "location" varchar, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107211733"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateLessons (20170107231455)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "lessons" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_origin" integer, "teacher_id" integer, "pupil_id" integer, "origin_id" integer, "date" date, "location" varchar, "cost" integer, "evolution" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107231455"]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-01-07 23:19:06 UTC], ["updated_at", 2017-01-07 23:19:06 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "themes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tech"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "password", "nb_skilly", "first_name", "last_name", "email", "location", "age", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_name", "Hugo"], ["password", "bonjour"], ["nb_skilly", 100], ["first_name", "hugo"], ["last_name", "martinez"], ["email", "hugo@mail.com"], ["location", "Paris"], ["age", 23], ["photo", "http://images.google.fr/imgres?imgurl=http%3A%2F%2Fcdn.deguisetoi.fr%2Fimages%2Frep_art%2Fgra%2F174%2F7%2F174755%2Fsombrero-mexicain-adulte_4.jpg&imgrefurl=http%3A%2F%2Fwww.deguisetoi.fr%2Fp-174755-sombrero-mexicain-adulte.html%3Ftype%3Dproduct&h=2400&w=1744&tbnid=B_Is2M1ceYSe8M%3A&vet=1&docid=xbpKeSv419By6M&ei=oW1FWMO6IoG0aYGRm3g&tbm=isch&client=safari&iact=rc&uact=3&dur=191&page=0&start=0&ndsp=21&ved=0ahUKEwiDj9qglt3QAhUBWhoKHYHIBg8QMwgwKAAwAA&bih=800&biw=1280"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "password", "nb_skilly", "first_name", "last_name", "email", "location", "age", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_name", "Thomas"], ["password", "hello"], ["nb_skilly", 150], ["first_name", "thomas"], ["last_name", "bessiere"], ["email", "thomas@mail.com"], ["location", "Toulouse"], ["age", 23], ["photo", "http://images.google.fr/imgres?imgurl=https%3A%2F%2Fmedia.licdn.com%2Fmpr%2Fmpr%2Fshrinknp_200_200%2FAAEAAQAAAAAAAAY6AAAAJDMwYWE1YzA4LTcwOTktNDAxMi1hZTMwLTMxZWYxMjQ3MDk1Ng.jpg&imgrefurl=https%3A%2F%2Ffr.linkedin.com%2Fin%2Fthomas-bessiere-952340a6&h=200&w=200&tbnid=Pxc20z7VbBFaAM%3A&vet=1&docid=UAHbr5NHdtBvOM&ei=VW5FWMDgO8e5asW3l5AB&tbm=isch&client=safari&iact=rc&uact=3&dur=238&page=0&start=0&ndsp=27&ved=0ahUKEwiA3932lt3QAhXHnBoKHcXbBRIQMwgeKAEwAQ&bih=800&biw=1280"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Vulgarisation Blockchain"], ["description", "Cours sur les fondamentaux de la Blockchain, cette nouvelle technologie qui vient disrupter l univers des banques et des assurances. Cours de vulgarisation, pour tous les niveaux."], ["cost", 110], ["location", "Toulouse"], ["photo", "img/courses/blockchain.jpeg"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Sculpture pour débutants"], ["description", "Session d'apprentissage de la sculpture pour les personnes n'ayant pas d'expérience."], ["cost", 60], ["location", "Egypte"], ["photo", "img/courses/sculpture.jpg"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Sculpture avancée"], ["description", "Sculpture pour ceux qui ont déjà de l'expérience dans le domaine."], ["cost", 90], ["location", "Egypte"], ["photo", "img/courses/sculpture2.jpg"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Bricolage"], ["description", "Cours de bricolage pour pouvoir prendre soin de votre maison/appartement."], ["cost", 70], ["location", "Nice"], ["photo", "img/courses/tools.jpg"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Kamasutra"], ["description", "Cours de kamasutra pour faire crier votre petit amie ou simplement prendre un peu de bon temps."], ["cost", 250], ["location", "Bois de Boulogne"], ["photo", "img/courses/woods.jpg"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Échecs"], ["description", "Cours d'échecs pour tous les niveaux."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "demands" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Échecs"], ["description", "Cherche des cours d'échecs pour débutant."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "demands" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["theme_id", 1], ["title", "Poker"], ["description", "Cherche cours pour apprendre à compter les cartes au Poker."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Blockchain"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Vulgarisation"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Deep-Learning"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "IoT"], ["created_at", 2017-01-07 23:19:16 UTC], ["updated_at", 2017-01-07 23:19:16 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "keyword_courses" ("course_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 1], ["keyword_id", 1], ["created_at", 2017-01-07 23:19:17 UTC], ["updated_at", 2017-01-07 23:19:17 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_courses" ("course_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 1], ["keyword_id", 2], ["created_at", 2017-01-07 23:19:17 UTC], ["updated_at", 2017-01-07 23:19:17 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 2], ["created_at", 2017-01-07 23:19:17 UTC], ["updated_at", 2017-01-07 23:19:17 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 1], ["created_at", 2017-01-07 23:19:17 UTC], ["updated_at", 2017-01-07 23:19:17 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 3], ["created_at", 2017-01-07 23:19:17 UTC], ["updated_at", 2017-01-07 23:19:17 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 4], ["created_at", 2017-01-07 23:19:17 UTC], ["updated_at", 2017-01-07 23:19:17 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/lessons" for ::1 at 2017-01-08 00:19:26 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LessonsController#index as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  [1m[36mLesson Load (0.2ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 595ms (Views: 579.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/lessons/new" for ::1 at 2017-01-08 00:19:41 +0100
+Processing by LessonsController#new as HTML
+  Rendering lessons/new.html.erb within layouts/application
+  Rendered lessons/_form.html.erb (31.1ms)
+  Rendered lessons/new.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 113ms (Views: 104.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/lessons" for ::1 at 2017-01-08 00:20:03 +0100
+Processing by LessonsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nnNxx3tlqdHn2eFlBZyW9HBzBXGcC7Bc9Q3J1Bcr8LvOavaI7gd8Zs5/n4574XnHxGB4K6gvAGDE9nh1yoqNkg==", "lesson"=>{"course_origin"=>"0", "teacher_id"=>"1", "pupil_id"=>"2", "origin_id"=>"1", "date(1i)"=>"2017", "date(2i)"=>"1", "date(3i)"=>"7", "location"=>"Paris", "cost"=>"2", "evolution"=>"0"}, "commit"=>"Create Lesson"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "lessons" ("course_origin", "teacher_id", "pupil_id", "origin_id", "date", "location", "cost", "evolution", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["course_origin", 0], ["teacher_id", 1], ["pupil_id", 2], ["origin_id", 1], ["date", Sat, 07 Jan 2017], ["location", "Paris"], ["cost", 2], ["evolution", 0], ["created_at", 2017-01-07 23:20:03 UTC], ["updated_at", 2017-01-07 23:20:03 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lessons/1
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/lessons/1" for ::1 at 2017-01-08 00:20:03 +0100
+Processing by LessonsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLesson Load (0.3ms)[0m  [1m[34mSELECT  "lessons".* FROM "lessons" WHERE "lessons"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering lessons/show.html.erb within layouts/application
+  Rendered lessons/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 116ms (Views: 108.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/lessons/1/edit" for ::1 at 2017-01-08 00:20:05 +0100
+Processing by LessonsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLesson Load (0.4ms)[0m  [1m[34mSELECT  "lessons".* FROM "lessons" WHERE "lessons"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering lessons/edit.html.erb within layouts/application
+  Rendered lessons/_form.html.erb (8.2ms)
+  Rendered lessons/edit.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 100ms (Views: 88.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/lessons" for ::1 at 2017-01-08 00:20:08 +0100
+Processing by LessonsController#index as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  [1m[36mLesson Load (0.5ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 104ms (Views: 101.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/lessons/new" for ::1 at 2017-01-08 00:20:10 +0100
+Processing by LessonsController#new as HTML
+  Rendering lessons/new.html.erb within layouts/application
+  Rendered lessons/_form.html.erb (4.4ms)
+  Rendered lessons/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 88ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-08 00:20:27 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (4.0ms)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-08 00:20:31 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-08 00:20:33 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 7ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/demands" for ::1 at 2017-01-08 00:20:33 +0100
+Processing by DemandsController#index as HTML
+  Rendering demands/index.html.erb within layouts/application
+  [1m[36mDemand Load (0.3ms)[0m  [1m[34mSELECT "demands".* FROM "demands"[0m
+  Rendered demands/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 119ms (Views: 113.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/demands" for ::1 at 2017-01-08 00:20:33 +0100
+Processing by DemandsController#index as HTML
+  Rendering demands/index.html.erb within layouts/application
+  [1m[36mDemand Load (0.2ms)[0m  [1m[34mSELECT "demands".* FROM "demands"[0m
+  Rendered demands/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/lessons" for ::1 at 2017-01-08 00:21:57 +0100
+Processing by LessonsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n/TIfROxCAf5xOio0xKbOSB2x2s0nlY03J0jNQUis07P7U8yhtPdsNBilkOtb3QKlGW6MQC65gjtZpKU2IPOZw==", "lesson"=>{"course_origin"=>"1", "teacher_id"=>"2", "pupil_id"=>"1", "origin_id"=>"1", "date(1i)"=>"2017", "date(2i)"=>"1", "date(3i)"=>"7", "location"=>"Paris", "cost"=>"2", "evolution"=>"1"}, "commit"=>"Create Lesson"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "lessons" ("course_origin", "teacher_id", "pupil_id", "origin_id", "date", "location", "cost", "evolution", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["course_origin", 1], ["teacher_id", 2], ["pupil_id", 1], ["origin_id", 1], ["date", Sat, 07 Jan 2017], ["location", "Paris"], ["cost", 2], ["evolution", 1], ["created_at", 2017-01-07 23:21:57 UTC], ["updated_at", 2017-01-07 23:21:57 UTC]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lessons/2
+Completed 302 Found in 13ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/lessons/2" for ::1 at 2017-01-08 00:21:57 +0100
+Processing by LessonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLesson Load (0.1ms)[0m  [1m[34mSELECT  "lessons".* FROM "lessons" WHERE "lessons"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lessons/show.html.erb within layouts/application
+  Rendered lessons/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 73ms (Views: 70.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/lessons" for ::1 at 2017-01-08 00:22:00 +0100
+Processing by LessonsController#index as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  [1m[36mLesson Load (0.2ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 78ms (Views: 74.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lessons/new" for ::1 at 2017-01-08 00:22:05 +0100
+Processing by LessonsController#new as HTML
+  Rendering lessons/new.html.erb within layouts/application
+  Rendered lessons/_form.html.erb (4.1ms)
+  Rendered lessons/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 79ms (Views: 77.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lessons/courses_attended.json?user_id=1" for ::1 at 2017-01-08 00:22:26 +0100
+Processing by LessonsController#show as JSON
+  Parameters: {"user_id"=>"1", "id"=>"courses_attended"}
+  [1m[36mLesson Load (0.1ms)[0m  [1m[34mSELECT  "lessons".* FROM "lessons" WHERE "lessons"."id" = ? LIMIT ?[0m  [["id", 0], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Lesson with 'id'=courses_attended):
+  
+app/controllers/lessons_controller.rb:83:in `set_lesson'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.7ms)
+Started GET "/lessons/courses_attended.json?user_id=1" for ::1 at 2017-01-08 00:22:59 +0100
+Processing by LessonsController#courses_attended as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering lessons/courses_attended.json.jbuilder
+  [1m[36mLesson Load (0.7ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?[0m  [["pupil_id", 1], ["status", 1]]
+  Rendered lessons/courses_attended.json.jbuilder (2.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: lessons.status: SELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?):
+    1: if @lessons.nil?
+    2:     json.set! :status, 'Error 404 : not found'
+    3: elsif
+    4:     json.array! @lessons.each do |les|
+    5:         json.id les.id
+    6:         json.teacher_id les.teacher_id
+    7:         json.pupil_id les.pupil_id
+  
+app/views/lessons/courses_attended.json.jbuilder:4:in `_app_views_lessons_courses_attended_json_jbuilder___2093026545294325253_70198538850060'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.6ms)
+Started GET "/lessons/courses_attended.json?user_id=1" for ::1 at 2017-01-08 00:24:14 +0100
+Processing by LessonsController#courses_attended as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering lessons/courses_attended.json.jbuilder
+  [1m[36mLesson Load (0.4ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?[0m  [["pupil_id", 1], ["status", 1]]
+  Rendered lessons/courses_attended.json.jbuilder (2.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: lessons.status: SELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?):
+    1: if @lessons.nil?
+    2:     json.set! :status, 'Error 404 : not found'
+    3: elsif
+    4:     json.array! @lessons.each do |les|
+    5:         json.id les.id
+    6:         json.course_origin les.course_origin
+    7:         json.teacher_id les.teacher_id
+  
+app/views/lessons/courses_attended.json.jbuilder:4:in `_app_views_lessons_courses_attended_json_jbuilder___2093026545294325253_70198553882300'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.6ms)
+Started GET "/lessons/courses_attended.json?user_id=1" for ::1 at 2017-01-08 00:25:23 +0100
+Processing by LessonsController#courses_attended as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering lessons/courses_attended.json.jbuilder
+  [1m[36mLesson Load (1.0ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?[0m  [["pupil_id", 1], ["status", 1]]
+  Rendered lessons/courses_attended.json.jbuilder (3.8ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: lessons.status: SELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?):
+    1: if @lessons.nil?
+    2:     json.set! :status, 'Error 404 : not found'
+    3: elsif
+    4:     json.array! @lessons.each do |les|
+    5:         json.id les.id
+    6:         json.course_origin les.course_origin
+    7:         json.teacher_id les.teacher_id
+  
+app/views/lessons/courses_attended.json.jbuilder:4:in `_app_views_lessons_courses_attended_json_jbuilder___2093026545294325253_70198500852380'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.2ms)
+Started GET "/lessons/courses_attended.json?user_id=1" for ::1 at 2017-01-08 00:27:34 +0100
+Processing by LessonsController#courses_attended as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering lessons/courses_attended.json.jbuilder
+  [1m[36mLesson Load (0.8ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?[0m  [["pupil_id", 1], ["status", 1]]
+  Rendered lessons/courses_attended.json.jbuilder (3.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: lessons.status: SELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?):
+    1: if @lessons.nil?
+    2:     json.set! :status, 'Error 404 : not found'
+    3: elsif
+    4:     json.array! @lessons.each do |les|
+    5:         json.id les.id
+    6:         json.course_origin les.course_origin
+    7:         json.teacher_id les.teacher_id
+  
+app/views/lessons/courses_attended.json.jbuilder:4:in `_app_views_lessons_courses_attended_json_jbuilder___2093026545294325253_70198510984700'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.8ms)
+Started GET "/lessons/courses_attended.json?user_id=1" for ::1 at 2017-01-08 00:27:42 +0100
+Processing by LessonsController#courses_attended as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering lessons/courses_attended.json.jbuilder
+  [1m[36mLesson Load (0.8ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?[0m  [["pupil_id", 1], ["status", 1]]
+  Rendered lessons/courses_attended.json.jbuilder (2.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: lessons.status: SELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?):
+    1: if @lessons.nil?
+    2:     json.set! :status, 'Error 404 : not found'
+    3: elsif
+    4:     json.array! @lessons.each do |les|
+    5:         json.id les.id
+    6:         json.course_origin les.course_origin
+    7:         json.teacher_id les.teacher_id
+  
+app/views/lessons/courses_attended.json.jbuilder:4:in `_app_views_lessons_courses_attended_json_jbuilder___2093026545294325253_70198561036000'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.8ms)
+Started GET "/lessons/courses_attended.json?user_id=1" for ::1 at 2017-01-08 00:28:37 +0100
+Processing by LessonsController#courses_attended as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering lessons/courses_attended.json.jbuilder
+  [1m[36mLesson Load (0.5ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?[0m  [["pupil_id", 1], ["status", 1]]
+  Rendered lessons/courses_attended.json.jbuilder (2.5ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: lessons.status: SELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?):
+    1: if @lessons.nil?
+    2:     json.set! :error, 'Error 404 : not found'
+    3: elsif
+    4:     json.array! @lessons.each do |les|
+    5:         json.id les.id
+    6:         json.course_origin les.course_origin
+    7:         json.teacher_id les.teacher_id
+  
+app/views/lessons/courses_attended.json.jbuilder:4:in `_app_views_lessons_courses_attended_json_jbuilder___2093026545294325253_70198561267960'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from load at /Users/martinez/.rvm/gems/ruby-2.3.0/bin/rake:23)
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateThemes (20161203135005)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "themes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161203135005"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywords (20161203172411)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "keywords" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161203172411"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateCourses (20161205132404)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "theme_id" integer, "title" varchar, "description" varchar, "cost" integer, "location" varchar, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132404"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywordCourses (20161205132457)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "keyword_courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "keyword_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132457"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateKeywordDems (20161205132543)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "keyword_dems" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "dem_id" integer, "keyword_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205132543"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateUsers (20161205140357)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_name" varchar, "password" varchar, "nb_skilly" integer, "first_name" varchar, "last_name" varchar, "email" varchar, "location" varchar, "age" integer, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161205140357"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDispoUsers (20170107105919)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "dispo_users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "dispo" date, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107105919"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPhoneNumberToUsers (20170107165533)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "phone_number" integer[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107165533"]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateDemands (20170107211733)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "demands" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "theme_id" integer, "title" varchar, "description" varchar, "cost" integer, "location" varchar, "photo" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107211733"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateLessons (20170107231455)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "lessons" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_origin" integer, "teacher_id" integer, "pupil_id" integer, "origin_id" integer, "date" date, "location" varchar, "cost" integer, "evolution" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170107231455"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-01-07 23:29:28 UTC], ["updated_at", 2017-01-07 23:29:28 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "themes" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Tech"], ["created_at", 2017-01-07 23:29:28 UTC], ["updated_at", 2017-01-07 23:29:28 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "password", "nb_skilly", "first_name", "last_name", "email", "location", "age", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_name", "Hugo"], ["password", "bonjour"], ["nb_skilly", 100], ["first_name", "hugo"], ["last_name", "martinez"], ["email", "hugo@mail.com"], ["location", "Paris"], ["age", 23], ["photo", "http://images.google.fr/imgres?imgurl=http%3A%2F%2Fcdn.deguisetoi.fr%2Fimages%2Frep_art%2Fgra%2F174%2F7%2F174755%2Fsombrero-mexicain-adulte_4.jpg&imgrefurl=http%3A%2F%2Fwww.deguisetoi.fr%2Fp-174755-sombrero-mexicain-adulte.html%3Ftype%3Dproduct&h=2400&w=1744&tbnid=B_Is2M1ceYSe8M%3A&vet=1&docid=xbpKeSv419By6M&ei=oW1FWMO6IoG0aYGRm3g&tbm=isch&client=safari&iact=rc&uact=3&dur=191&page=0&start=0&ndsp=21&ved=0ahUKEwiDj9qglt3QAhUBWhoKHYHIBg8QMwgwKAAwAA&bih=800&biw=1280"], ["created_at", 2017-01-07 23:29:28 UTC], ["updated_at", 2017-01-07 23:29:28 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("user_name", "password", "nb_skilly", "first_name", "last_name", "email", "location", "age", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_name", "Thomas"], ["password", "hello"], ["nb_skilly", 150], ["first_name", "thomas"], ["last_name", "bessiere"], ["email", "thomas@mail.com"], ["location", "Toulouse"], ["age", 23], ["photo", "http://images.google.fr/imgres?imgurl=https%3A%2F%2Fmedia.licdn.com%2Fmpr%2Fmpr%2Fshrinknp_200_200%2FAAEAAQAAAAAAAAY6AAAAJDMwYWE1YzA4LTcwOTktNDAxMi1hZTMwLTMxZWYxMjQ3MDk1Ng.jpg&imgrefurl=https%3A%2F%2Ffr.linkedin.com%2Fin%2Fthomas-bessiere-952340a6&h=200&w=200&tbnid=Pxc20z7VbBFaAM%3A&vet=1&docid=UAHbr5NHdtBvOM&ei=VW5FWMDgO8e5asW3l5AB&tbm=isch&client=safari&iact=rc&uact=3&dur=238&page=0&start=0&ndsp=27&ved=0ahUKEwiA3932lt3QAhXHnBoKHcXbBRIQMwgeKAEwAQ&bih=800&biw=1280"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Vulgarisation Blockchain"], ["description", "Cours sur les fondamentaux de la Blockchain, cette nouvelle technologie qui vient disrupter l univers des banques et des assurances. Cours de vulgarisation, pour tous les niveaux."], ["cost", 110], ["location", "Toulouse"], ["photo", "img/courses/blockchain.jpeg"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Sculpture pour débutants"], ["description", "Session d'apprentissage de la sculpture pour les personnes n'ayant pas d'expérience."], ["cost", 60], ["location", "Egypte"], ["photo", "img/courses/sculpture.jpg"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Sculpture avancée"], ["description", "Sculpture pour ceux qui ont déjà de l'expérience dans le domaine."], ["cost", 90], ["location", "Egypte"], ["photo", "img/courses/sculpture2.jpg"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Bricolage"], ["description", "Cours de bricolage pour pouvoir prendre soin de votre maison/appartement."], ["cost", 70], ["location", "Nice"], ["photo", "img/courses/tools.jpg"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Kamasutra"], ["description", "Cours de kamasutra pour faire crier votre petit amie ou simplement prendre un peu de bon temps."], ["cost", 250], ["location", "Bois de Boulogne"], ["photo", "img/courses/woods.jpg"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "courses" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Échecs"], ["description", "Cours d'échecs pour tous les niveaux."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "demands" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 1], ["theme_id", 1], ["title", "Échecs"], ["description", "Cherche des cours d'échecs pour débutant."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "demands" ("user_id", "theme_id", "title", "description", "cost", "location", "photo", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["user_id", 2], ["theme_id", 1], ["title", "Poker"], ["description", "Cherche cours pour apprendre à compter les cartes au Poker."], ["cost", 90], ["location", "Paris"], ["photo", "img/courses/chess.jpg"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Blockchain"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Vulgarisation"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Deep-Learning"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keywords" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "IoT"], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_courses" ("course_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 1], ["keyword_id", 1], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_courses" ("course_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["course_id", 1], ["keyword_id", 2], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 2], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 1], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 3], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "keyword_dems" ("dem_id", "keyword_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["dem_id", 1], ["keyword_id", 4], ["created_at", 2017-01-07 23:29:29 UTC], ["updated_at", 2017-01-07 23:29:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/lessons/courses_attended.json?user_id=1" for ::1 at 2017-01-08 00:29:40 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by LessonsController#courses_attended as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering lessons/courses_attended.json.jbuilder
+  [1m[36mLesson Load (0.5ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?[0m  [["pupil_id", 1], ["status", 1]]
+  Rendered lessons/courses_attended.json.jbuilder (7.3ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: lessons.status: SELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?):
+    1: if @lessons.nil?
+    2:     json.set! :error, 'Error 404 : not found'
+    3: elsif
+    4:     json.array! @lessons.each do |les|
+    5:         json.id les.id
+    6:         json.course_origin les.course_origin
+    7:         json.teacher_id les.teacher_id
+  
+app/views/lessons/courses_attended.json.jbuilder:4:in `_app_views_lessons_courses_attended_json_jbuilder___818284330064882288_70218280344920'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.0ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (79.1ms)
+Started GET "/lessons/courses_attended.json?user_id=1" for ::1 at 2017-01-08 00:29:51 +0100
+Processing by LessonsController#courses_attended as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering lessons/courses_attended.json.jbuilder
+  [1m[36mLesson Load (0.4ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?[0m  [["pupil_id", 1], ["status", 1]]
+  Rendered lessons/courses_attended.json.jbuilder (2.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (SQLite3::SQLException: no such column: lessons.status: SELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."status" = ?):
+    1: if @lessons.nil?
+    2:     json.set! :error, 'Error 404 : not found'
+    3: elsif
+    4:     json.array! @lessons.each do |les|
+    5:         json.id les.id
+    6:         json.course_origin les.course_origin
+    7:         json.teacher_id les.teacher_id
+  
+app/views/lessons/courses_attended.json.jbuilder:4:in `_app_views_lessons_courses_attended_json_jbuilder___818284330064882288_70218278165280'
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.3ms)
+Started GET "/lessons/" for ::1 at 2017-01-08 00:29:55 +0100
+Processing by LessonsController#index as HTML
+Started GET "/lessons/new" for ::1 at 2017-01-08 00:29:55 +0100
+Processing by LessonsController#new as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  Rendering lessons/new.html.erb within layouts/application
+  [1m[36mLesson Load (0.2ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (3.7ms)
+  Rendered lessons/_form.html.erb (163.6ms)
+  Rendered lessons/new.html.erb within layouts/application (167.7ms)
+Completed 200 OK in 634ms (Views: 630.9ms | ActiveRecord: 0.2ms)
+
+
+Completed 200 OK in 632ms (Views: 615.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/demands" for ::1 at 2017-01-08 00:30:07 +0100
+Processing by DemandsController#index as HTML
+  Rendering demands/index.html.erb within layouts/application
+  [1m[36mDemand Load (0.2ms)[0m  [1m[34mSELECT "demands".* FROM "demands"[0m
+  Rendered demands/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 102ms (Views: 96.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2017-01-08 00:47:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (5.3ms)
+Completed 200 OK in 26ms (Views: 12.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2017-01-08 00:47:13 +0100
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/martinez/.rvm/gems/ruby-2.3.0/gems/railties-5.0.0.1/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/lessons" for ::1 at 2017-01-08 00:47:28 +0100
+Processing by LessonsController#index as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  [1m[36mLesson Load (0.5ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 488ms (Views: 482.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/lessons/new" for ::1 at 2017-01-08 00:47:31 +0100
+Processing by LessonsController#new as HTML
+  Rendering lessons/new.html.erb within layouts/application
+  Rendered lessons/_form.html.erb (44.5ms)
+  Rendered lessons/new.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 161ms (Views: 149.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/lessons" for ::1 at 2017-01-08 00:50:21 +0100
+Processing by LessonsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LZBGF7aUuln5V3BQhWuB1kLz5DVe7c+FCLoC2RRCIlR9icFYI/Zv7tDxDrv7Fm7l9uCZb2rJf7k5QbN4yeNffQ==", "lesson"=>{"course_origin"=>"0", "teacher_id"=>"1", "pupil_id"=>"2", "origin_id"=>"1", "date(1i)"=>"2017", "date(2i)"=>"1", "date(3i)"=>"7", "location"=>"Paris", "cost"=>"10", "evolution"=>"1"}, "commit"=>"Create Lesson"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "lessons" ("course_origin", "teacher_id", "pupil_id", "origin_id", "date", "location", "cost", "evolution", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["course_origin", 0], ["teacher_id", 1], ["pupil_id", 2], ["origin_id", 1], ["date", Sat, 07 Jan 2017], ["location", "Paris"], ["cost", 10], ["evolution", 1], ["created_at", 2017-01-07 23:50:21 UTC], ["updated_at", 2017-01-07 23:50:21 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lessons/1
+Completed 302 Found in 18ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/lessons/1" for ::1 at 2017-01-08 00:50:21 +0100
+Processing by LessonsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLesson Load (0.2ms)[0m  [1m[34mSELECT  "lessons".* FROM "lessons" WHERE "lessons"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering lessons/show.html.erb within layouts/application
+  Rendered lessons/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 88ms (Views: 82.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lessons" for ::1 at 2017-01-08 00:50:22 +0100
+Processing by LessonsController#index as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  [1m[36mLesson Load (1.9ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 79ms (Views: 74.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/lessons/new" for ::1 at 2017-01-08 00:50:24 +0100
+Processing by LessonsController#new as HTML
+  Rendering lessons/new.html.erb within layouts/application
+  Rendered lessons/_form.html.erb (7.3ms)
+  Rendered lessons/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 104ms (Views: 101.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/lessons" for ::1 at 2017-01-08 00:50:41 +0100
+Processing by LessonsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AJvLF85Y8E6tgdyVAv2mz/uiWI8XQ/usGaKnZTlnigZQgkxYWzol+YQnon58gEn8T7El1SNnS5AoWRbE5Mb3Lw==", "lesson"=>{"course_origin"=>"1", "teacher_id"=>"2", "pupil_id"=>"1", "origin_id"=>"2", "date(1i)"=>"2017", "date(2i)"=>"1", "date(3i)"=>"7", "location"=>"Paris", "cost"=>"10", "evolution"=>"0"}, "commit"=>"Create Lesson"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "lessons" ("course_origin", "teacher_id", "pupil_id", "origin_id", "date", "location", "cost", "evolution", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["course_origin", 1], ["teacher_id", 2], ["pupil_id", 1], ["origin_id", 2], ["date", Sat, 07 Jan 2017], ["location", "Paris"], ["cost", 10], ["evolution", 0], ["created_at", 2017-01-07 23:50:41 UTC], ["updated_at", 2017-01-07 23:50:41 UTC]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/lessons/2
+Completed 302 Found in 12ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/lessons/2" for ::1 at 2017-01-08 00:50:41 +0100
+Processing by LessonsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mLesson Load (0.2ms)[0m  [1m[34mSELECT  "lessons".* FROM "lessons" WHERE "lessons"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering lessons/show.html.erb within layouts/application
+  Rendered lessons/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 80ms (Views: 77.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lessons" for ::1 at 2017-01-08 00:50:43 +0100
+Processing by LessonsController#index as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  [1m[36mLesson Load (0.2ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 90ms (Views: 87.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lessons/" for ::1 at 2017-01-08 00:50:48 +0100
+Processing by LessonsController#index as HTML
+  Rendering lessons/index.html.erb within layouts/application
+  [1m[36mLesson Load (0.2ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons"[0m
+  Rendered lessons/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 69ms (Views: 67.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lessons/courses_attended.json?user_id=1" for ::1 at 2017-01-08 00:50:49 +0100
+Processing by LessonsController#courses_attended as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering lessons/courses_attended.json.jbuilder
+  [1m[36mLesson Load (0.4ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."evolution" = ?[0m  [["pupil_id", 1], ["evolution", 1]]
+  Rendered lessons/courses_attended.json.jbuilder (4.9ms)
+Completed 200 OK in 22ms (Views: 10.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/lessons/courses_attended.json?user_id=1" for ::1 at 2017-01-08 00:50:50 +0100
+Processing by LessonsController#courses_attended as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering lessons/courses_attended.json.jbuilder
+  [1m[36mLesson Load (0.1ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."evolution" = ?[0m  [["pupil_id", 1], ["evolution", 1]]
+  Rendered lessons/courses_attended.json.jbuilder (1.0ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/lessons/courses_attended.json?user_id=2" for ::1 at 2017-01-08 00:51:05 +0100
+Processing by LessonsController#courses_attended as JSON
+  Parameters: {"user_id"=>"2"}
+  Rendering lessons/courses_attended.json.jbuilder
+  [1m[36mLesson Load (0.1ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."pupil_id" = ? AND "lessons"."evolution" = ?[0m  [["pupil_id", 2], ["evolution", 1]]
+  Rendered lessons/courses_attended.json.jbuilder (1.2ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/lessons/courses_taught.json?user_id=2" for ::1 at 2017-01-08 00:51:27 +0100
+Processing by LessonsController#courses_taught as JSON
+  Parameters: {"user_id"=>"2"}
+  Rendering lessons/courses_taught.json.jbuilder
+  [1m[36mLesson Load (0.2ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."teacher_id" = ? AND "lessons"."evolution" = ?[0m  [["teacher_id", 2], ["evolution", 1]]
+  Rendered lessons/courses_taught.json.jbuilder (1.3ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/lessons/courses_taught.json?user_id=2" for ::1 at 2017-01-08 00:51:31 +0100
+Processing by LessonsController#courses_taught as JSON
+  Parameters: {"user_id"=>"2"}
+  Rendering lessons/courses_taught.json.jbuilder
+  [1m[36mLesson Load (0.1ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."teacher_id" = ? AND "lessons"."evolution" = ?[0m  [["teacher_id", 2], ["evolution", 1]]
+  Rendered lessons/courses_taught.json.jbuilder (1.0ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/lessons/courses_taught.json?user_id=1" for ::1 at 2017-01-08 00:51:32 +0100
+Processing by LessonsController#courses_taught as JSON
+  Parameters: {"user_id"=>"1"}
+  Rendering lessons/courses_taught.json.jbuilder
+  [1m[36mLesson Load (0.2ms)[0m  [1m[34mSELECT "lessons".* FROM "lessons" WHERE "lessons"."teacher_id" = ? AND "lessons"."evolution" = ?[0m  [["teacher_id", 1], ["evolution", 1]]
+  Rendered lessons/courses_taught.json.jbuilder (1.3ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.2ms)
+
+

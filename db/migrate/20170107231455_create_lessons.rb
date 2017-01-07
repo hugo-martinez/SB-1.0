@@ -1,11 +1,14 @@
 class CreateLessons < ActiveRecord::Migration[5.0]
   def change
     create_table :lessons do |t|
-      t.integer :course_id
-      t.integer :dem_id
+      t.integer :course_origin
+      t.integer :teacher_id
+      t.integer :pupil_id
+      t.integer :origin_id
       t.date :date
+      t.string :location
       t.integer :cost
-      t.integer :status
+      t.integer :evolution
 
       t.timestamps
     end
