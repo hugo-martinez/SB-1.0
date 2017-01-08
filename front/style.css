@@ -18,6 +18,10 @@ body header {
   border-color: rgba(51, 153, 153, 0.7);
 }
 
+html body #view-container {
+  padding-top: 60px;
+}
+
 html body learn-color {
   color: rgba(51, 153, 153, 1);
 }
@@ -300,17 +304,6 @@ body div#footer {
   width: 100%;
   height: 50px;
   background-color: white;
-}
-
-body .push {
-  height: 150px;
-}
-
-
-/* content */
-
-body .content {
-  padding-top: 150px;
 }
 
 /* freeline */

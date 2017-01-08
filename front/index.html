@@ -14,9 +14,9 @@
       ng-controller="HeaderController as headerCtrl">
     </header>
     <header logged-header ng-show="isAuthentificated()"
-      class="row" ng-controller="HeaderController as headerCtrl">
+      ng-controller="HeaderController as headerCtrl">
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid" id="view-container">
       <ng-view></ng-view>
     </div>
     <div id="footer" skilly-footer></div>
