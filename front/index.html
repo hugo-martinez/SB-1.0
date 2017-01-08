@@ -9,19 +9,16 @@
 </head>
 
 <body ng-controller="MainController as mainCtrl">
-  <div id='popin-container'></div>
-  <div class="container-fluid" ng-controller="CoursesController as coursesCtrl">
+  <div ng-controller="CoursesController as coursesCtrl">
     <header anon-header ng-hide="isAuthentificated()"
-      class="row"
       ng-controller="HeaderController as headerCtrl">
     </header>
     <header logged-header ng-show="isAuthentificated()"
       class="row" ng-controller="HeaderController as headerCtrl">
     </header>
-    <ng-view></ng-view>
-    <div class="push"></div>
-
-  </div>
+    <div class="container-fluid">
+      <ng-view></ng-view>
+    </div>
     <div id="footer" skilly-footer></div>
   </div>
 </body>

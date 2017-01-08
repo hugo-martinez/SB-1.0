@@ -33,10 +33,6 @@
         return deffered.promise;
       };
 
-      users.logout = function() {
-        delete $scope.$storage.user;
-        delete $scope.$storage.userAccess;
-      }
 
       return users;
 

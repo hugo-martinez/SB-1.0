@@ -26,6 +26,9 @@
     .when("/inscription", {
       templateUrl: "ang/views/createAccount.html"
     })
+    .when("/500", {
+      templateUrl: "ang/views/internalError.html"
+    })
     .otherwise({
       redirectTo: "/404"
     });
