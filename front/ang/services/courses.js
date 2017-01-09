@@ -64,6 +64,7 @@
           args = args.concat(courseFilter.location);
         }
         console.log("Service courses : getCourses");
+        console.log("url : " + url);
         return $http.get(url);
       };
 
@@ -71,6 +72,7 @@
       courses.postCourse = function(course) {
         // #TODO Insérer vérifications ici
 
+        console.log("Post course : " + 'https://api-sb.herokuapp.com/courses');
         return $http.post('https://api-sb.herokuapp.com/courses', course);
       };
 

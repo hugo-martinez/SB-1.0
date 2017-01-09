@@ -371,3 +371,75 @@ body #popin-container {
   -webkit-transition: box-shadow 0.5s;
   transition: box-shadow 0.5s;
 }
+
+.customBtn.red {
+  background-color: #e63946;
+}
+
+
+/* dashboard */
+
+html body #dashboard {
+  padding-top: 40px;
+  padding-bottom: 70px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#dashboard td,
+#dashboard p {
+  font-size: 0.8em;
+}
+
+#dashboard .border {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #a8dadc;
+}
+
+#dashboard h3 {
+  font-size: 1.8em;
+  color: #e63946;
+}
+
+#dashboard table td:first-child {
+  color: #e63946;
+}
+
+#dashboard table td:last-child {
+  padding-left: 5px;
+}
+
+#dashboard .personal-info {
+  vertical-align: top;
+  margin-bottom: 50px;
+}
+
+.personal-info .photo,
+.personal-info .infos {
+  margin: 10px 3%;
+  padding: 0;
+  display: inline-block;
+}
+
+.personal-info .photo {
+  width: 25%
+}
+.personal-info .infos {
+  width: 52%
+}
+
+#dashboard .personal-stats {
+
+}
+
+#dashboard .personal-stats .stat {
+  display: inline-block;
+  width: 32%;
+  padding: 5px 5px;
+  text-align: center;
+}
+
+
+#dashboard #studTeach-chart {
+  height: 200px;
+}

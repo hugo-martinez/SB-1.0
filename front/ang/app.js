@@ -26,6 +26,9 @@
     .when("/inscription", {
       templateUrl: "ang/views/createAccount.html"
     })
+    .when("/dashboard", {
+      templateUrl: "ang/views/dashboard.html"
+    })
     .when("/500", {
       templateUrl: "ang/views/internalError.html"
     })

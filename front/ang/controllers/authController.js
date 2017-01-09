@@ -11,7 +11,7 @@
           then(function(user) {
             $scope.$storage.user = user;
             $scope.$storage.userAccess = $scope.$storage.userRoles.user;
-            $location.path('/learn');
+            $location.path('/dashboard');
           }, function(error) {
             $scope.invalidCredentials = true;
             console.log(error);
@@ -22,7 +22,7 @@
           console.log("logout clicked");
           delete $scope.$storage.user;
           delete $scope.$storage.userAccess;
-          $location.path('');
+          $location.path('/learn');
         };
       }
     ]);
