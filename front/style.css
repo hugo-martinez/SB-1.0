@@ -443,3 +443,56 @@ html body #dashboard {
 #dashboard #studTeach-chart {
   height: 200px;
 }
+
+/* Messages */
+
+#messages-list h3 {
+  font-size: 1.8em;
+  color: #e63946;
+}
+
+#messages-list .mess-icon {
+  margin-right: 3px;
+}
+
+html #messages-list .seen {
+  visibility: hidden;
+}
+
+#messages-list .message a {
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+}
+
+#messages-list .message a,
+#messages-list .message a:link,
+#messages-list .message a:visited,
+#messages-list .message a:hover,
+#messages-list .message a:active {
+  text-decoration: none;
+}
+
+
+/* Notifications */
+
+#notifications-list h3 {
+  font-size: 1.8em;
+  color: #e63946;
+}
+
+#notifications-list .notification .url {
+  float: right;
+}
+
+#notifications-list .notification a {
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+}
+
+#notifications-list .notification a,
+#notifications-list .notification a:link,
+#notifications-list .notification a:visited,
+#notifications-list .notification a:hover,
+#notifications-list .notification a:active {
+  text-decoration: none;
+}

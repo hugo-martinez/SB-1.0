@@ -26,8 +26,21 @@
     .when("/inscription", {
       templateUrl: "ang/views/createAccount.html"
     })
-    .when("/dashboard", {
-      templateUrl: "ang/views/dashboard.html"
+    // Users pages
+    .when("/account/dashboard", {
+      templateUrl: "ang/views/account/dashboard.html"
+    })
+    .when("/account/notifications", {
+      templateUrl: "ang/views/account/notifications.html"
+    })
+    .when("/account/messages", {
+      templateUrl: "ang/views/account/messages.html"
+    })
+    .when("/account/stats", {
+      templateUrl: "ang/views/account/stats.html"
+    })
+    .when("/account/settings", {
+      templateUrl: "ang/views/account/settings.html"
     })
     .when("/500", {
       templateUrl: "ang/views/internalError.html"

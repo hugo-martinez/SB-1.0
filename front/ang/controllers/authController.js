@@ -11,7 +11,7 @@
           then(function(user) {
             $scope.$storage.user = user;
             $scope.$storage.userAccess = $scope.$storage.userRoles.user;
-            $location.path('/dashboard');
+            $location.path('/account/dashboard');
           }, function(error) {
             $scope.invalidCredentials = true;
             console.log(error);
