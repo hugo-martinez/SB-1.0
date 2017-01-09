@@ -1,48 +1,52 @@
-<%= form_for @demand, :html => { :class => "form-horizontal demand" } do |f| %>
+<%= form_for(demand) do |f| %>
+  <% if demand.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(demand.errors.count, "error") %> prohibited this demand from being saved:</h2>
 
-  <% if @demand.errors.any? %>
-    <div id="error_expl" class="panel panel-danger">
-      <div class="panel-heading">
-        <h3 class="panel-title"><%= pluralize(@demand.errors.count, "error") %> prohibited this demand from being saved:</h3>
-      </div>
-      <div class="panel-body">
-        <ul>
-        <% @demand.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-        </ul>
-      </div>
+      <ul>
+      <% demand.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= f.label :user_id, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :user_id, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:user_id) %>
-  </div>
-  <div class="form-group">
-    <%= f.label :theme_id, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :theme_id, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:theme_id) %>
-  </div>
-  <div class="form-group">
-    <%= f.label :comment, :class => 'control-label col-lg-2' %>
-    <div class="col-lg-10">
-      <%= f.text_field :comment, :class => 'form-control' %>
-    </div>
-    <%=f.error_span(:comment) %>
+  <div class="field">
+    <%= f.label :user_id %>
+    <%= f.number_field :user_id %>
   </div>
 
-  <div class="form-group">
-    <div class="col-lg-offset-2 col-lg-10">
-      <%= f.submit nil, :class => 'btn btn-primary' %>
-      <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
-                demands_path, :class => 'btn btn-default' %>
-    </div>
+  <div class="field">
+    <%= f.label :theme_id %>
+    <%= f.number_field :theme_id %>
   </div>
 
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :cost %>
+    <%= f.number_field :cost %>
+  </div>
+
+  <div class="field">
+    <%= f.label :location %>
+    <%= f.text_field :location %>
+  </div>
+
+  <div class="field">
+    <%= f.label :photo %>
+    <%= f.text_field :photo %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
 <% end %>

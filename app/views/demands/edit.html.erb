@@ -1,5 +1,6 @@
-<%- model_class = Demand -%>
-<div class="page-header">
-  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human.titleize %></h1>
-</div>
-<%= render :partial => 'form' %>
+<h1>Editing Demand</h1>
+
+<%= render 'form', demand: @demand %>
+
+<%= link_to 'Show', @demand %> |
+<%= link_to 'Back', demands_path %>

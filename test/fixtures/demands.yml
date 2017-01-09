@@ -3,9 +3,17 @@
 one:
   user_id: 1
   theme_id: 1
-  comment: MyString
+  title: MyString
+  description: MyString
+  cost: 1
+  location: MyString
+  photo: MyString
 
 two:
   user_id: 1
   theme_id: 1
-  comment: MyString
+  title: MyString
+  description: MyString
+  cost: 1
+  location: MyString
+  photo: MyString

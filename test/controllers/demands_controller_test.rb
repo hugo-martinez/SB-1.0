@@ -17,7 +17,7 @@ class DemandsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create demand" do
     assert_difference('Demand.count') do
-      post demands_url, params: { demand: { comment: @demand.comment, theme_id: @demand.theme_id, user_id: @demand.user_id } }
+      post demands_url, params: { demand: { cost: @demand.cost, description: @demand.description, location: @demand.location, photo: @demand.photo, theme_id: @demand.theme_id, title: @demand.title, user_id: @demand.user_id } }
     end
 
     assert_redirected_to demand_url(Demand.last)
@@ -34,7 +34,7 @@ class DemandsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update demand" do
-    patch demand_url(@demand), params: { demand: { comment: @demand.comment, theme_id: @demand.theme_id, user_id: @demand.user_id } }
+    patch demand_url(@demand), params: { demand: { cost: @demand.cost, description: @demand.description, location: @demand.location, photo: @demand.photo, theme_id: @demand.theme_id, title: @demand.title, user_id: @demand.user_id } }
     assert_redirected_to demand_url(@demand)
   end
 

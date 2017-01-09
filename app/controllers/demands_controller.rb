@@ -61,6 +61,13 @@ class DemandsController < ApplicationController
     end
   end
 
+  def search
+    if params[:user_id]
+      then
+      @demands = Demand.where(user_id: params[:user_id])
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_demand
@@ -69,6 +76,6 @@ class DemandsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def demand_params
-      params.require(:demand).permit(:user_id, :theme_id, :comment)
+      params.require(:demand).permit(:user_id, :theme_id, :title, :description, :cost, :location, :photo)
     end
 end

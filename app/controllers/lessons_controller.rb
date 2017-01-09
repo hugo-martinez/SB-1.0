@@ -61,6 +61,22 @@ class LessonsController < ApplicationController
     end
   end
 
+  def courses_taught
+    if params[:user_id]
+      then
+      l = Lesson.where(teacher_id: params[:user_id])
+      @lessons = l.where(evolution: 1)
+    end
+  end
+
+  def courses_attended
+    if params[:user_id]
+      then
+      l = Lesson.where(pupil_id: params[:user_id])
+      @lessons = l.where(evolution: 1)
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_lesson
@@ -69,6 +85,6 @@ class LessonsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def lesson_params
-      params.require(:lesson).permit(:course_id, :dem_id, :date, :cost, :status)
+      params.require(:lesson).permit(:course_origin, :teacher_id, :pupil_id, :origin_id, :date, :location, :cost, :evolution)
     end
 end
