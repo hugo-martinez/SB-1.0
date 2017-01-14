@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :user_verifs
   get 'users/search.json' => 'users#search'
   get 'courses/search.json' => 'courses#search'
   get 'demands/search.json' => 'demands#search'

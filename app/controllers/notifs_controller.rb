@@ -1,6 +1,6 @@
 class NotifsController < ApplicationController
   before_action :set_notif, only: [:show, :edit, :update, :destroy]
-
+  skip_before_filter  :verify_authenticity_token
   # GET /notifs
   # GET /notifs.json
   def index

@@ -1,0 +1,2 @@
+class UserVerif < ApplicationRecord
+end

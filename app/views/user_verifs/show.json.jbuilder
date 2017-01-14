@@ -1,0 +1,1 @@
+json.partial! "user_verifs/user_verif", user_verif: @user_verif

@@ -1,0 +1,1 @@
+json.array! @user_verifs, partial: 'user_verifs/user_verif', as: :user_verif

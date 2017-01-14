@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @user_verif.user_id %>
+</p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @user_verif.code %>
+</p>
+
+<%= link_to 'Edit', edit_user_verif_path(@user_verif) %> |
+<%= link_to 'Back', user_verifs_path %>
