@@ -19,9 +19,16 @@
 
           var valid = true;
 
-          valid = valid && course.title.length !== 0;
-          valid = valid && course.description !== 0;
-          valid = valid && course.location !== 0;
+          valid = valid &&
+            typeof course.title !== "undefined" &&
+            course.title.length !== 0 &&
+            typeof course.description !== "undefined" &&
+            course.description.length !== 0 &&
+            typeof course.cost !== "undefined" &&
+            course.cost.length !== 0 &&
+            typeof course.location !== "undefined" &&
+            course.location.length !== 0;
+
 
           if (valid) {
             courses.
