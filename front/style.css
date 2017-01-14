@@ -306,6 +306,15 @@ body div#footer {
   background-color: white;
 }
 
+#footer a {
+  cursor: pointer;
+}
+
+#footer img.social {
+  width: 24px;
+  cursor: pointer;
+}
+
 /* freeline */
 
 body .freeline {
