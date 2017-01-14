@@ -1,5 +1,7 @@
 class KeywordCoursesController < ApplicationController
   before_action :set_keyword_course, only: [:show, :edit, :update, :destroy]
+  kip_before_filter  :verify_authenticity_token
+
 
   # GET /keyword_courses
   # GET /keyword_courses.json

@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  kip_before_filter  :verify_authenticity_token
+
 
   # GET /users
   # GET /users.json

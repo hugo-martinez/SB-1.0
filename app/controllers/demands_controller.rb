@@ -1,5 +1,6 @@
 class DemandsController < ApplicationController
   before_action :set_demand, only: [:show, :edit, :update, :destroy]
+  kip_before_filter  :verify_authenticity_token
 
   # GET /demands
   # GET /demands.json

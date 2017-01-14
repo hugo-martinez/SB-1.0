@@ -1,6 +1,6 @@
 class CoursesController < ApplicationController
   before_action :set_course, only: [:show, :edit, :update, :destroy]
-  #skip_before_filter  :verify_authenticity_token
+  skip_before_filter  :verify_authenticity_token
 
   # GET /courses
   # GET /courses.json

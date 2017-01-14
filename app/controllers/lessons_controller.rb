@@ -1,5 +1,7 @@
 class LessonsController < ApplicationController
   before_action :set_lesson, only: [:show, :edit, :update, :destroy]
+  kip_before_filter  :verify_authenticity_token
+
 
   # GET /lessons
   # GET /lessons.json
@@ -61,7 +63,8 @@ class LessonsController < ApplicationController
     end
   end
 
-  def courses_taught
+  # List of all the 
+  def lessons_taught
     if params[:user_id]
       then
       l = Lesson.where(teacher_id: params[:user_id])
@@ -69,13 +72,25 @@ class LessonsController < ApplicationController
     end
   end
 
-  def courses_attended
+  def lessons_attended
     if params[:user_id]
       then
       l = Lesson.where(pupil_id: params[:user_id])
       @lessons = l.where(evolution: 1)
     end
   end
+
+  def lessons_remaining
+    if params[:user_id]
+      then 
+      lt = Lesson.where(teacher_id: params[:user_id])
+      lest = lt.where(evolution: 0)
+      lp = Lesson.where(pupil_id: params[:user_id])
+      lesp = lp.where(evolution: 0)
+      @lessons = lest|lesp
+    end
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.
