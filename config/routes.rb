@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'courses/search.json' => 'courses#search'
   get 'demands/search.json' => 'demands#search'
   get 'conversations/search.json' => 'conversations#search'
+  get 'user_verifs/verif.json' => 'user_verifs#verif'
   get 'lessons/lessons_taught.json' => 'lessons#lessons_taught'
   get 'lessons/lessons_attended.json' => 'lessons#lessons_attended'
   get 'lessons/lessons_remaining.json' => 'lessons#lessons_remaining'
@@ -23,6 +24,7 @@ Rails.application.routes.draw do
   resources :users
   get 'home/index'
   get 'users/search/:email' => 'users#search'
+  get 'user_verifs/verif/:token' => 'user_verifs#verif'
   get 'courses/search/:user_id' => 'courses#search'
   get 'demands/search/:user_id' => 'demands#search'
   get 'notifs/search/:user_id' => 'notifs#search'

@@ -62,6 +62,24 @@ class UserVerifsController < ApplicationController
     end
   end
 
+  def verif
+    if params[:token]
+      then
+      @uv = UserVerif.where(code: params[:token]).first
+      if @uv != nil
+        user = User.where(id: @uv.user_id).first
+          if user.verif == 0
+            @user = user
+            user.update(verif: 1)
+          else
+            @user = nil
+          end
+        else
+          @user = nil
+        end
+    end
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user_verif
