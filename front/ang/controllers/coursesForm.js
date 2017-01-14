@@ -36,7 +36,7 @@
               console.log("Course posted");
               $location.path("/courseposted");
             }, function(error) {
-              $scope.invalidData = true;
+              $scope.invalidSubmission = true;
             });
           } else {
             $scope.invalidSubmission = true;
@@ -59,6 +59,18 @@
             course.cost.length !== 0 &&
             typeof course.location !== "undefined" &&
             course.location.length !== 0;
+
+          if (valid) {
+            api.
+            postDemand(demand).
+            then(function(demand) {
+              $location.path("/demandposted");
+            }, function(error) {
+              $scope.invalidSubmission = true;
+            })
+          } else {
+            $scope.invalidSubmission = true;
+          }
         }
       }
     ]);

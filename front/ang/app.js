@@ -17,6 +17,9 @@
     .when("/courseposted", {
       templateUrl: "ang/views/courseposted.html"
     })
+    .when("/demandposted", {
+      templateUrl: "ang/views/demandposted.html"
+    })
     .when("/publishcourse", {
       templateUrl: "ang/views/publishcourse.html"
     })
