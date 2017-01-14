@@ -14,11 +14,17 @@
     .when("/askforcourse", {
       templateUrl: "ang/views/askforcourse.html"
     })
+    .when("/courseposted", {
+      templateUrl: "ang/views/courseposted.html"
+    })
     .when("/proposeacourse", {
       templateUrl: "ang/views/proposeacourse.html"
     })
     .when("/404", {
       templateUrl: "ang/views/erreur404.html"
+    })
+    .when("/needlogin", {
+      templateUrl: "ang/views/errorNotLoggedIn.html"
     })
     .when("/connexion", {
       templateUrl: "ang/views/login.html"

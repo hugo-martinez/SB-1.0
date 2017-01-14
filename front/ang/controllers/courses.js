@@ -49,11 +49,11 @@
           age: 192,
         };
 
-        courses.postCourse(testCourse).then(function(data) {
+        /*courses.postCourse(testCourse).then(function(data) {
           console.log("Post test success");
         }, function(data) {
           console.log("Post test error");
-        });
+        });*/
       }
     ]);
 
