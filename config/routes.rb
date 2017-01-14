@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :user_verifs
   get 'users/search.json' => 'users#search'
   get 'courses/search.json' => 'courses#search'
   get 'demands/search.json' => 'demands#search'
@@ -9,6 +8,7 @@ Rails.application.routes.draw do
   get 'lessons/lessons_remaining.json' => 'lessons#lessons_remaining'
   get 'notifs/search.json' => 'notifs#search'
   get 'messages/search.json' => 'messages#search'
+  resources :user_verifs
   resources :conversations
   resources :messages
   resources :notifs
