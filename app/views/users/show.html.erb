@@ -1,21 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>User name:</strong>
-  <%= @user.user_name %>
-</p>
-
-<p>
-  <strong>Password:</strong>
-  <%= @user.password %>
-</p>
-
-<p>
-  <strong>Nb skilly:</strong>
-  <%= @user.nb_skilly %>
-</p>
-
-<p>
   <strong>First name:</strong>
   <%= @user.first_name %>
 </p>
@@ -23,6 +8,11 @@
 <p>
   <strong>Last name:</strong>
   <%= @user.last_name %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @user.password %>
 </p>
 
 <p>
@@ -36,18 +26,28 @@
 </p>
 
 <p>
+  <strong>Nb skilly:</strong>
+  <%= @user.nb_skilly %>
+</p>
+
+<p>
+  <strong>Birth date:</strong>
+  <%= @user.birth_date %>
+</p>
+
+<p>
   <strong>Location:</strong>
   <%= @user.location %>
 </p>
 
 <p>
-  <strong>Age:</strong>
-  <%= @user.age %>
+  <strong>Photo:</strong>
+  <%= @user.photo %>
 </p>
 
 <p>
-  <strong>Photo:</strong>
-  <%= @user.photo %>
+  <strong>Verif:</strong>
+  <%= @user.verif %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

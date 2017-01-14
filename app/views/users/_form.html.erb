@@ -12,21 +12,6 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :user_name %>
-    <%= f.text_field :user_name %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password %>
-    <%= f.text_field :password %>
-  </div>
-
-  <div class="field">
-    <%= f.label :nb_skilly %>
-    <%= f.number_field :nb_skilly %>
-  </div>
-
-  <div class="field">
     <%= f.label :first_name %>
     <%= f.text_field :first_name %>
   </div>
@@ -37,8 +22,28 @@
   </div>
 
   <div class="field">
+    <%= f.label :password %>
+    <%= f.text_field :password %>
+  </div>
+
+  <div class="field">
     <%= f.label :email %>
     <%= f.text_field :email %>
+  </div>
+
+  <div class="field">
+    <%= f.label :phone_number %>
+    <%= f.number_field :phone_number %>
+  </div>
+
+  <div class="field">
+    <%= f.label :nb_skilly %>
+    <%= f.number_field :nb_skilly %>
+  </div>
+
+  <div class="field">
+    <%= f.label :birth_date %>
+    <%= f.date_select :birth_date %>
   </div>
 
   <div class="field">
@@ -47,13 +52,13 @@
   </div>
 
   <div class="field">
-    <%= f.label :age %>
-    <%= f.number_field :age %>
+    <%= f.label :photo %>
+    <%= f.text_field :photo %>
   </div>
 
   <div class="field">
-    <%= f.label :photo %>
-    <%= f.text_field :photo %>
+    <%= f.label :verif %>
+    <%= f.number_field :verif %>
   </div>
 
   <div class="actions">

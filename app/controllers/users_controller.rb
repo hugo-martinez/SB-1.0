@@ -2,7 +2,6 @@ class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   skip_before_filter  :verify_authenticity_token
 
-
   # GET /users
   # GET /users.json
   def index
@@ -24,9 +23,6 @@ class UsersController < ApplicationController
   end
 
   # POST /users
-
-  
-
   # POST /users.json
   def create
     @user = User.new(user_params)
@@ -35,6 +31,7 @@ class UsersController < ApplicationController
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
+        @user.verif = 0;
       else
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
@@ -67,11 +64,15 @@ class UsersController < ApplicationController
   end
 
   def search
-    if params[:user_name]
+    if params[:email]
       then
-      user_n = User.where("lower(user_name) = ?", params[:user_name].downcase)
+      user_n = User.where(email: params[:email]).first
       if params[:password]
-        then @user = user_n.where(password: params[:password]).first
+        if user_n.password = params[:password]
+          then @user = user_n
+        else
+          @user = nil
+        end
       end
     end
   end
@@ -84,6 +85,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:user_name, :password, :nb_skilly, :first_name, :last_name, :email, :phone_number, :location, :age, :photo)
+      params.require(:user).permit(:first_name, :last_name, :password, :email, :phone_number, :nb_skilly, :birth_date, :location, :photo, :verif)
     end
 end

@@ -10,26 +10,22 @@ Theme.create(
 )
 
 User.create(
-    user_name: 'Hugo',
     password: 'bonjour',
     nb_skilly: 100,
     first_name: 'hugo',
     last_name: 'martinez',
     email: 'hugo@mail.com',
     location: 'Paris',
-    age: 23,
     photo: 'http://images.google.fr/imgres?imgurl=http%3A%2F%2Fcdn.deguisetoi.fr%2Fimages%2Frep_art%2Fgra%2F174%2F7%2F174755%2Fsombrero-mexicain-adulte_4.jpg&imgrefurl=http%3A%2F%2Fwww.deguisetoi.fr%2Fp-174755-sombrero-mexicain-adulte.html%3Ftype%3Dproduct&h=2400&w=1744&tbnid=B_Is2M1ceYSe8M%3A&vet=1&docid=xbpKeSv419By6M&ei=oW1FWMO6IoG0aYGRm3g&tbm=isch&client=safari&iact=rc&uact=3&dur=191&page=0&start=0&ndsp=21&ved=0ahUKEwiDj9qglt3QAhUBWhoKHYHIBg8QMwgwKAAwAA&bih=800&biw=1280'
 )
 
 User.create(
-	user_name: 'Thomas',
 	password: 'hello',
 	nb_skilly: 150,
 	first_name: 'thomas',
 	last_name: 'bessiere',
 	email: 'thomas@mail.com',
 	location: 'Toulouse',
-	age: 23,
 	photo: 'http://images.google.fr/imgres?imgurl=https%3A%2F%2Fmedia.licdn.com%2Fmpr%2Fmpr%2Fshrinknp_200_200%2FAAEAAQAAAAAAAAY6AAAAJDMwYWE1YzA4LTcwOTktNDAxMi1hZTMwLTMxZWYxMjQ3MDk1Ng.jpg&imgrefurl=https%3A%2F%2Ffr.linkedin.com%2Fin%2Fthomas-bessiere-952340a6&h=200&w=200&tbnid=Pxc20z7VbBFaAM%3A&vet=1&docid=UAHbr5NHdtBvOM&ei=VW5FWMDgO8e5asW3l5AB&tbm=isch&client=safari&iact=rc&uact=3&dur=238&page=0&start=0&ndsp=27&ved=0ahUKEwiA3932lt3QAhXHnBoKHcXbBRIQMwgeKAEwAQ&bih=800&biw=1280'
 )
 
