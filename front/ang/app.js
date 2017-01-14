@@ -11,14 +11,14 @@
     .when('/teach', {
       templateUrl: "ang/views/landingTeach.html"
     })
-    .when("/askforcourse", {
-      templateUrl: "ang/views/askforcourse.html"
+    .when("/publishdemand", {
+      templateUrl: "ang/views/publishdemand.html"
     })
     .when("/courseposted", {
       templateUrl: "ang/views/courseposted.html"
     })
-    .when("/proposeacourse", {
-      templateUrl: "ang/views/proposeacourse.html"
+    .when("/publishcourse", {
+      templateUrl: "ang/views/publishcourse.html"
     })
     .when("/404", {
       templateUrl: "ang/views/erreur404.html"

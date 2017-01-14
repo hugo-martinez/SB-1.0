@@ -11,7 +11,7 @@
           <input
             type="title" class="form-control" id="title"
             placeholder="Titre du cours" required
-            ng-model="course.title"
+            ng-model="demand.title"
           />
         </div>
       </div>
@@ -21,7 +21,7 @@
           <textarea
             type="description" class="form-control" id="description"
             placeholder="Description du cours" required
-            ng-model="course.description"
+            ng-model="demand.description"
           ></textarea>
         </div>
       </div>
@@ -30,7 +30,7 @@
         <div class="col-sm-12">
           <input
             type="number" class="form-control" id="cost" placeholder="Coût du cours"
-            required ng-model="course.cost"
+            required ng-model="demand.cost"
           />
         </div>
       </div>
@@ -39,13 +39,13 @@
         <div class="col-sm-12">
           <input
             type="location" class="form-control" id="location" placeholder="Lieu du cours"
-            required ng-model="course.location"
+            required ng-model="demand.location"
           />
         </div>
       </div>
 
       <input
-        type="submit" ng-click="submitAskForCourse(course)" value="Save"
+        type="submit" ng-click="publishDemand(course)" value="Save"
         class="customBtn"
       />
     </form>
