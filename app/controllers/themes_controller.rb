@@ -1,6 +1,6 @@
 class ThemesController < ApplicationController
   before_action :set_theme, only: [:show, :edit, :update, :destroy]
-  kip_before_filter  :verify_authenticity_token
+  skip_before_filter  :verify_authenticity_token
 
 
   # GET /themes

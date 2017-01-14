@@ -1,6 +1,6 @@
 class FeedBacksController < ApplicationController
   before_action :set_feed_back, only: [:show, :edit, :update, :destroy]
-  kip_before_filter  :verify_authenticity_token
+  skip_before_filter  :verify_authenticity_token
 
   # GET /feed_backs
   # GET /feed_backs.json

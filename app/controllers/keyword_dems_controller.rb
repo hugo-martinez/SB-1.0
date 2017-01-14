@@ -1,6 +1,6 @@
 class KeywordDemsController < ApplicationController
   before_action :set_keyword_dem, only: [:show, :edit, :update, :destroy]
-  kip_before_filter  :verify_authenticity_token
+  skip_before_filter  :verify_authenticity_token
 
 
   # GET /keyword_dems

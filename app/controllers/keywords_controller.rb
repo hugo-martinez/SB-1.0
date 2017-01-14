@@ -1,6 +1,6 @@
 class KeywordsController < ApplicationController
   before_action :set_keyword, only: [:show, :edit, :update, :destroy]
-  kip_before_filter  :verify_authenticity_token
+  skip_before_filter  :verify_authenticity_token
 
 
   # GET /keywords
