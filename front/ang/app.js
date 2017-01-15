@@ -45,6 +45,9 @@
     .when("/account/messages", {
       templateUrl: "ang/views/account/messages.html"
     })
+    .when("/conversation/:convid", {
+      templateUrl: "ang/views/account/chat.html",
+    })
     .when("/account/stats", {
       templateUrl: "ang/views/account/stats.html"
     })
