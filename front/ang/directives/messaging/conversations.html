@@ -1,0 +1,8 @@
+<div class="col-xs-10 col-xs-offset-1" id="messages-list"
+ng-init="loadConversations()">
+  <h3>Vos messages</h3>
+  <hr/>
+  <div class="message" ng-repeat="conversation in conversations">
+    <conversation conversation="conversation"></conversation>
+  </div>
+</div>
