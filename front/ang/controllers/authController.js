@@ -7,7 +7,7 @@
 
         authCtrl.login = function() {
           users.
-          login($scope.user.pseudo, $scope.user.pwd).
+          login($scope.user.email, $scope.user.pwd).
           then(function(user) {
             $scope.$storage.user = user.data;
             $scope.$storage.userAccess = $scope.$storage.userRoles.user;

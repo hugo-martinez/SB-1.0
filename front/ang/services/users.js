@@ -9,14 +9,14 @@
 
       // #TODO à tester
 
-      users.login = function(user_name, password) {
+      users.login = function(email, password) {
         var deffered = $q.defer();
 
-        if (typeof user_name === "undefined" || typeof password === undefined) {
+        if (typeof email === "undefined" || typeof password === undefined) {
           deffered.reject("Invalid arguments.");
         } else {
-          url = 'https://api-sb.herokuapp.com/users/search.json?user_name=';
-          url = url.concat(user_name);
+          url = 'https://api-sb.herokuapp.com/users/search.json?email=';
+          url = url.concat(email);
           url = url.concat("&password=");
           url = url.concat(password);
           $http.get(url).then(function(response) {
