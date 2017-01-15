@@ -306,6 +306,15 @@ body div#footer {
   background-color: white;
 }
 
+#footer a {
+  cursor: pointer;
+}
+
+#footer img.social {
+  width: 24px;
+  cursor: pointer;
+}
+
 /* freeline */
 
 body .freeline {
@@ -313,7 +322,8 @@ body .freeline {
   font-size: 1.5em;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  color: #9A12B3;
+  color: #e63946;
+  padding-top: 75px;
 }
 
 body .freeline .tail {

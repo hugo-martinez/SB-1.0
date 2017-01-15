@@ -6,21 +6,27 @@
 
         var ctrl = this;
         $scope.courses = [];
+        $scope.coursesLoaded = false;
 
         $scope.isAuthentificated = function(){
           return $scope.$storage.userAccess;
         }
 
-        var promise = courses.getCourses();
-        console.log("Received promise type of : " + typeof promise);
-        promise.then(function(data) {
-          $scope.courses = data.data;
-        }, function(data) {
-          console.log("Error fetching courses using courses service.");
-          $location.path('/500');
-        });
+        $scope.loadCourses = function() {
+          var promise = courses.getCourses();
+          console.log("Received promise type of : " + typeof promise);
+          promise.then(function(data) {
+            $scope.courses = data.data;
+          }, function(data) {
+            console.log("Error fetching courses using courses service.");
+            $location.path('/500');
+          });
+        }
 
         $scope.triggerSearch = function() {
+          if (! $scope.coursesLoaded) {
+            $scope.loadCourses();
+          }
           var tmpCourses = []
           console.log("triggerSearch called with searchString : " + $scope.searchString);
           $scope.courses.forEach(function(crs) {
@@ -37,23 +43,6 @@
             $scope.triggerSearch();
           }
         );
-
-        var testCourse = {
-          user_name: "TestUser",
-          password: "helloworld",
-          nb_skilly: 100,
-          first_name: "Foo",
-          last_name: "Bar",
-          email: "foo@bar.fr",
-          location: "In Uranus",
-          age: 192,
-        };
-
-        courses.postCourse(testCourse).then(function(data) {
-          console.log("Post test success");
-        }, function(data) {
-          console.log("Post test error");
-        });
       }
     ]);
 

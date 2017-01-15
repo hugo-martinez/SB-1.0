@@ -9,7 +9,7 @@
           users.
           login($scope.user.pseudo, $scope.user.pwd).
           then(function(user) {
-            $scope.$storage.user = user;
+            $scope.$storage.user = user.data;
             $scope.$storage.userAccess = $scope.$storage.userRoles.user;
             $location.path('/account/dashboard');
           }, function(error) {

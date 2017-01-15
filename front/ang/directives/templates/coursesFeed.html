@@ -1,4 +1,4 @@
-<div class="row" id="courses-feed">
+<div class="row" id="courses-feed" ng-init="loadCourses()">
   <div class="col-xs-12" style="text-align:center;padding-top: 20px">
     <form>
       <input type="checkbox"
@@ -12,6 +12,11 @@
     <div class="row"
          ng-repeat="course in courses">
       <course course="course"></course>
+    </div>
+    <div class="row">
+      <a href="/#/publishdemand"><button class="customBtn">
+        Effectuer une demande de cours
+      </button></a>
     </div>
     <courses-map
       courses="courses"

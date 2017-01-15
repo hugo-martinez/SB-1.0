@@ -1,0 +1,53 @@
+<div class="row myForm" ng-controller="CoursesFormController as cfCtrl">
+  <div class="col-xs-6 col-xs-offset-3">
+    <div class="alert alert-danger" ng-show="invalidSubmission">
+      <p>Données invalides, veuillez réessayer.</p>
+    </div>
+
+    <form class="form-horizontal" novalidate
+    ng-init="checkLogin()">
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <input
+            type="title" class="form-control" id="title"
+            placeholder="Titre du cours" required
+            ng-model="course.title"
+          />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <textarea
+            type="description" class="form-control" id="description"
+            placeholder="Description du cours" required
+            ng-model="course.description"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <input
+            type="number" class="form-control" id="cost" placeholder="Coût du cours"
+            required ng-model="course.cost"
+          />
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-12">
+          <input
+            type="location" class="form-control" id="location" placeholder="Lieu du cours"
+            required ng-model="course.location"
+          />
+        </div>
+      </div>
+
+      <input
+        type="submit" ng-click="publishCourse(course)" value="Save"
+        class="customBtn"
+      />
+    </form>
+  </div>
+</div>
