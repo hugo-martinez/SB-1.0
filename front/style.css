@@ -512,6 +512,7 @@ html #messages-list .seen {
 
 #userChat {
   padding-top: 10px;
+  padding-bottom: 80px;
   text-align: center;
 }
 

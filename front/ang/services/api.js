@@ -7,7 +7,7 @@
       // ---------- Demands -----------
 
       api.postDemand = function(demand) {
-        return $http.put('https://api-sb.herokuapp.com/demands', demand);
+        return $http.post('https://api-sb.herokuapp.com/demands', demand);
       }
 
       // ---------- Messages -----------
@@ -30,6 +30,10 @@
         var url = 'https://api-sb.herokuapp.com/messages/search.json';
         url += "?conv_id=" + convId;
         return $http.get(url);
+      }
+
+      api.postMessage = function(message) {
+        return $http.post('https://api-sb.herokuapp.com/messages', message);
       }
 
       // ---------- Users -----------

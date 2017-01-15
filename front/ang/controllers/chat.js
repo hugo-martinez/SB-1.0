@@ -17,6 +17,15 @@
     }
     $scope.checkLogin();
 
+    var date = new Date();
+    console.log(date.toISOString());
+
+    var testmessage = {
+      conv_id: 1,
+      msg: "Date test",
+      user_id: 1
+    }
+
     $scope.convId = $routeParams.convid;
     if (isNaN($scope.convId)) {
       $location.path("/500");
@@ -86,8 +95,35 @@
       ctrl.callRefresh();
     };
 
+    ctrl.postMessage = function() {
+      $scope.checkLogin();
+      var backMessage = {
+        conv_id: $scope.convId,
+        msg: $scope.msg.content,
+        user_id: $scope.$storage.user.id
+      };
+
+      api.postMessage(backMessage)
+      .then(function(success) {
+        $scope.msg.content = "";
+        ctrl.refresh();
+      }, function(error) {
+        console.log("Error while trying to send message.");
+        console.log(error);
+        $location.path('/500');
+      })
+    }
+
+    $("#input-field").keydown(function(e) {
+      if (e.keyCode == 13) {
+        e.preventDefault();
+        ctrl.postMessage();
+      }
+    });
+
     // Use callRefresh to launch automatic refreshing
     ctrl.refresh = function() {
+      $scope.checkLogin();
       var prom = api.getMessages($scope.convId);
       prom.then(function(resp) {
         var rawMessages = resp.data;
