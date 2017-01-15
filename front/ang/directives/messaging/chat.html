@@ -1,5 +1,17 @@
 <div class="row">
-  <div id="userChat" ng-init="loadMessages()">
-
+  <div id="userChat" class="col-xs-8 col-xs-offset-2" ng-init="loadMessages()">
+    <div ng-repeat="message in messages" class="message">
+      <div class="{{ message.class }} content-wrapper">
+        <p class="time">
+          {{ message.dateTime | utcToTime }}
+        </p>
+        <p class="content">{{ message.content }}</p>
+      </div>
+    </div>
+    <div id="input-wrapper">
+      <input type="text"
+        id="input-field" tabindex="1"
+        placeholder=""/>
+    </div>
   </div>
 </div>
