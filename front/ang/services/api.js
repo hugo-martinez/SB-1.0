@@ -44,6 +44,14 @@
         return $http.get(url);
       }
 
+      // ---------- Courses -----------
+
+      api.getCourse = function(courseId) {
+        var url = "https://api-sb.herokuapp.com/courses/";
+        url += courseId + ".json";
+        return $http.get(url);
+      }
+
       return api;
 
     }]);

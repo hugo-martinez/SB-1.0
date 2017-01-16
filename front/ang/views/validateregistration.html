@@ -1,0 +1,15 @@
+<div class="simple-page" ng-controller="RegistrationController as regCtrl"
+ng-init="loadPrice()">
+  <p>Vous êtes sur le point devous inscrire à ce cours pour le prix de {{ price }} skillies.</p>
+  <p>Si vous validez, les skillies ne seront pas débités avant que le cours soit
+    passé mais vous ne pouvez vous inscrire qu'à autant de cours que votre porte-monnaie
+    vous le permet.</p>
+  <p>
+    <a href="/#/register/{{ courseId }}"><button class="customBtn">
+      Continuer
+    </button></a>
+    <a href="/#/learn"><button class="customBtn">
+      Annuler
+    </button></a>
+  </p>
+</div>

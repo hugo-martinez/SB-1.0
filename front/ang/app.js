@@ -11,6 +11,12 @@
     .when('/teach', {
       templateUrl: "ang/views/landingTeach.html"
     })
+    .when('/course/:courseId', {
+      templateUrl: "ang/views/fullcourse.html"
+    })
+    .when('/validateregistration/:courseId', {
+      templateUrl: "ang/views/validateregistration.html"
+    })
     .when("/publishdemand", {
       templateUrl: "ang/views/publishdemand.html"
     })
