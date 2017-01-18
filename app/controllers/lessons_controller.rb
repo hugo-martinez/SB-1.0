@@ -91,6 +91,14 @@ class LessonsController < ApplicationController
     end
   end
 
+  def every_lessons
+    if params[:user_id]
+      then
+      lt = Lesson.where(teacher_id: params[:user_id])
+      lp = Lesson.where(pupil_id: params[:user_id])
+      @lessons = lt|lp
+    end
+  end 
 
   private
     # Use callbacks to share common setup or constraints between actions.

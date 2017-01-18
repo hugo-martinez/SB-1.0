@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'lessons/lessons_taught.json' => 'lessons#lessons_taught'
   get 'lessons/lessons_attended.json' => 'lessons#lessons_attended'
   get 'lessons/lessons_remaining.json' => 'lessons#lessons_remaining'
+  get 'lessons/every_lessons.json' => 'lessons#every_lessons'
   get 'notifs/search.json' => 'notifs#search'
   get 'messages/search.json' => 'messages#search'
   resources :user_verifs
@@ -34,5 +35,6 @@ Rails.application.routes.draw do
   get 'lessons/lessons_taught/:user_id' => 'lessons#lessons_taught'
   get 'lessons/lessons_attended/:user_id' => 'lessons#lessons_attended'
   get 'lessons/lessons_remaining/:user_id' => 'lessons#lessons_remaining'
+  get 'lessons/every_lessons/:user_id' => 'lessons#every_lessons'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
