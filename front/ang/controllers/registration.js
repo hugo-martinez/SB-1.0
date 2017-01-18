@@ -35,7 +35,44 @@
     };
 
     $scope.register = function() {
-      return;
+      api.getAllLessons()
+      .then(function(resp) {
+        var lessons = resp.data;
+        console.log("Processing lessons :");
+        console.log(lessons);
+        var nLessons = resp.data.length;
+        var skilliesSpent = 0;
+        for (var i = 0; i < nLessons; i++) {
+          console.log("Processing lesson : ");
+          console.log(lessons[i]);
+          if (lessons[i].pupil_id == $scope.$storage.user.id &&
+            lessons[i].evolution == 0) {
+            console.log("Yo");
+            skilliesSpent += lessons[i].cost;
+          }
+        }
+        console.log(skilliesSpent + $scope.price);
+        console.log($scope.price);
+        console.log($scope.$storage.user.nb_skilly);
+        if (skilliesSpent + $scope.price > $scope.$storage.user.nb_skilly) {
+          console.log("Not enough skillies to register");
+          $location.path('/notenoughskillies');
+        } else {
+          api.registerLessonFromCourse($scope.$storage.user.id, $scope.courseId)
+          .then(function(succes) {
+            console.log("Lesson successfully registered.");
+            // $location.path(lol);
+          }, function(error) {
+            console.log("Error during registration : ");
+            console.log(error);
+            $location.path('/500');
+          });
+        }
+      }, function(error) {
+        console.log("Error trying to fetch all courses to check skilly fund");
+        console.log(error);
+        $location.path('/500');
+      })
     };
 
   }]);

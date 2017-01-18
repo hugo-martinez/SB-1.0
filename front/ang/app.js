@@ -17,6 +17,9 @@
     .when('/validateregistration/:courseId', {
       templateUrl: "ang/views/validateregistration.html"
     })
+    .when('/notenoughskillies', {
+      templateUrl: 'ang/views/notenoughskillies.html'
+    })
     .when("/publishdemand", {
       templateUrl: "ang/views/publishdemand.html"
     })

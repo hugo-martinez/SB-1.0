@@ -307,6 +307,7 @@ body div#footer {
 }
 
 #footer a {
+  display: inline-block;
   cursor: pointer;
 }
 
