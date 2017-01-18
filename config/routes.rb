@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   resources :courses
   resources :users
   get 'home/index'
+  root 'home#index'
   get 'users/search/:email' => 'users#search'
   get 'user_verifs/verif/:token' => 'user_verifs#verif'
   get 'courses/search/:user_id' => 'courses#search'

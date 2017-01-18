@@ -38,9 +38,18 @@ gem "twitter-bootstrap-rails"
 
 gem 'rack-cors', :require => 'rack/cors'
 
+# for SMS
+
+gem 'textbelt'
+
 # CORS tuto - helps serializing
 
 gem 'grape-active_model_serializers'
+
+# pour le mailing
+
+gem 'rest-client'
+gem 'mailgun-ruby'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -58,6 +67,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+
+gem 'angular-rails-templates'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

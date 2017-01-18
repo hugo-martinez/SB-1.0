@@ -8,6 +8,15 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def send_simple_message(Message_content)
+    RestClient.post "https://api:key-4007fdb4f5fcfcbe8cd7094a60b1fcd6"\
+    "@api.mailgun.net/v3/skillybox.com/messages",
+    :from => "Skillybox <mail@skillybox.com>",
+    :to => "hugo.martinez@polytechnique.edu, thomas.bessiere@polytechnique.edu",
+    :subject => "Hello",
+    :text => Message_content
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show
@@ -25,6 +34,7 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   require 'securerandom'
+  require 'textbelt'
 
   def create
     @user = User.new(user_params)
@@ -34,6 +44,8 @@ class UsersController < ApplicationController
         UserVerif.create(user_id: @user.id, code: SecureRandom.hex)
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
+        send_simple_message('user_params')
+        #TextBelt.text('0033665783311', 'MOtherfucking Skilybox', 'france')
       else
         format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }

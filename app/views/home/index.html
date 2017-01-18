@@ -1,0 +1,72 @@
+<html lang="fr" ng-app="skilly">
+
+<head>
+  <meta charset="utf-8" />
+  <title>SkillyBox</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Reem+Kufi|Roboto:400,500" rel="stylesheet">
+</head>
+
+<body ng-controller="MainController as mainCtrl">
+  <div ng-controller="CoursesController as coursesCtrl">
+    <header anon-header ng-hide="isAuthentificated()"
+      ng-controller="HeaderController as headerCtrl">
+    </header>
+    <header logged-header ng-show="isAuthentificated()"
+      ng-controller="HeaderController as headerCtrl">
+    </header>
+    <div class="container-fluid" id="view-container">
+      <ng-view></ng-view>
+    </div>
+    <div id="footer" skilly-footer></div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+
+<!-- Vanilla JS -->
+
+<!-- External Modules -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-cookies.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+
+<!-- Modules -->
+
+<script src="ang/app.js"></script>
+<script src="ang/coursesApp.js"></script>
+
+<!-- Services -->
+<script src="ang/services/googleMaps.js"></script>
+<script src="ang/services/courses.js"></script>
+<script src="ang/services/users.js"></script>
+
+<!-- Controllers -->
+<script src="ang/controllers/courses.js"></script>
+<script src="ang/controllers/coursesMap.js"></script>
+<script src="ang/controllers/coursesForm.js"></script>
+<script src="ang/controllers/mainController.js"></script>
+<script src="ang/controllers/authController.js"></script>
+<script src="ang/controllers/header.js"></script>
+<script src="ang/controllers/dashboard.js"></script>
+
+<!-- Directives -->
+<script src="ang/directives/choiceButton.js"></script>
+<script src="ang/directives/anonHeader.js"></script>
+<script src="ang/directives/loggedHeader.js"></script>
+<script src="ang/directives/skillyFooter.js"></script>
+<script src="ang/directives/coursesFeed.js"></script>
+<script src="ang/directives/coursesMap.js"></script>
+<script src="ang/directives/course.js"></script>
+
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDV-DNUx_fsGsDy4HYT9bgnMuj6f_sC35Y&region=FR">
+</script>
+
+</html>
