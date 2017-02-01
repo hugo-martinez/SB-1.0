@@ -7,19 +7,11 @@
       <table class="infos">
         <tr>
           <td>Nom</td>
-          <td>Hugo M.</td>
-        </tr>
-        <tr>
-          <td>Âge</td>
-          <td>23 ans</td>
+          <td>{{ user.firstName | capitalize }} {{ user.lastName | initial }}</td>
         </tr>
         <tr>
           <td>Mail</td>
-          <td>hugo@gmail.com</td>
-        </tr>
-        <tr>
-          <td>Tél.</td>
-          <td>0612345678</td>
+          <td>{{ user.email }}</td>
         </tr>
         <tr>
           <td>Description</td>
@@ -38,6 +30,42 @@
       </p>
     </div>
   </div>
+
+  <div class="row current-courses">
+    <div class="col-md-10 col-md-offset-1 border">
+      <h3>Vos cours du moment</h3>
+      <div class="row" ng-init="loadCurrentCourses()">
+        <div class="col-xs-6 col-xs-offset-0">
+          <h4>Cours suivis</h4>
+          <p ng-hide="attendsCourses">
+            Vous n'avez aucun cours pour le moment ! Inscrivez-vous aux cours qui vous passionnent.
+          </p>
+          <p ng-repeat="course in coursesAttended">
+            {{ course.title }}
+          </p>
+          <p><a href="/#/learn"><button class="customBtn red">
+            Les cours proposés
+          </button></a></p>
+        </div>
+        <div class="col-xs-6 col-xs-offset-0">
+          <h4>Cours enseignés</h4>
+          <p ng-hide="teachesCourses">
+            Vous n'enseignez aucun cours pour le moment ! Consultez les demandes de cours ou publiez le votre !
+          </p>
+          <p ng-repeat="lesson in lessonsTaught">
+            {{ lesson.title }}
+          </p>
+          <p><a href="/#/publishcourse"><button class="customBtn red">
+            Publier un cours
+          </button></a></p>
+          <p><a href="/#/teach"><button class="customBtn red">
+            Les demandes de cours
+          </button></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="row personal-stats"><div class="col-md-10 col-md-offset-1 border">
     <div class="stat student">
       <p>student img</p>
@@ -71,10 +99,10 @@
           <td>Différents thèmes</td>
           <td>Agriculture, académique, insolite</td>
         </tr>
-        <tr>
+        <!-- <tr>
           <td>Note moyenne</td>
           <td>4,2/5</td>
-        </tr>
+        </tr> -->
         <tr>
           <td>Titre du dernier cours</td>
           <td>Comment changer un fût</td>

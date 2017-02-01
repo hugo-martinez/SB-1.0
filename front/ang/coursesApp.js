@@ -12,4 +12,10 @@
       return input.substring(11, 16);
     }
   });
+
+  angular.module('skilly-courses').filter('initial', function() {
+    return function(input) {
+      return input.substring(0, 1).toUpperCase() + '.';
+    }
+  });
 })();

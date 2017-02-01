@@ -57,6 +57,12 @@
         return $http.get(url);
       }
 
+      api.getUserCourses = function(userId) {
+        var url = "https://api-sb.herokuapp.com/courses/search.json?user_id=";
+        url += userId;
+        return $http.get(url);
+      }
+
       api.registerLessonFromCourse = function(pupilId, courseId) {
         var deffered = $q.defer();
         api.getCourse(courseId)
@@ -74,7 +80,16 @@
           console.log(lesson);
           $http.post('https://api-sb.herokuapp.com/lessons', lesson)
           .then(function(success) {
-            deffered.resolve('Creation successful');
+            var conv = {
+              user_id1: pupilId,
+              user_id2: lesson.teacher_id,
+            }
+            $http.post('https://api-sb.hrokuapp.com/conversations', conv)
+            .then(function(success) {
+              deffered.resolve('Registration successful !');
+            }, function(error) {
+              deffered.reject(error);
+            })
           }, function(error) {
             deffered.reject(error);
           });
@@ -88,6 +103,13 @@
 
       api.getAllLessons = function() {
         var url = "https://api-sb.herokuapp.com/lessons.json";
+        return $http.get(url);
+      }
+
+      api.getLessonsTaught = function(userId) {
+        var url = "https://api-sb.herokuapp.com/lessons.json";
+
+
         return $http.get(url);
       }
 

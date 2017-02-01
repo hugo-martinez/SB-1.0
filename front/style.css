@@ -455,6 +455,10 @@ html body #dashboard {
   height: 200px;
 }
 
+#dashboard .current-courses {
+  margin-bottom: 40px;
+}
+
 /* Messages */
 
 #messages-list h3 {
